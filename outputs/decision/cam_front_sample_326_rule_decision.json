@@ -1,0 +1,11 @@
+{
+  "sample_index": 326,
+  "recommended_action": "BRAKE",
+  "decision_reason": "Lead object is within 12 m.",
+  "lead_class": "car",
+  "lead_distance_m": 8.65,
+  "lead_relative_speed_mps": 1.54,
+  "ttc_s": 5.62,
+  "drivable_ahead": false,
+  "ego_speed_mps": 13.9
+}

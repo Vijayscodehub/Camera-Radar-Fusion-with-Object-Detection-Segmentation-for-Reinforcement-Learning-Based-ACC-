@@ -1,0 +1,11 @@
+{
+  "sample_index": 14,
+  "recommended_action": "BRAKE",
+  "decision_reason": "Lead-object TTC is 3.71 s.",
+  "lead_class": "truck",
+  "lead_distance_m": 12.18,
+  "lead_relative_speed_mps": 3.28,
+  "ttc_s": 3.71,
+  "drivable_ahead": true,
+  "ego_speed_mps": 13.9
+}

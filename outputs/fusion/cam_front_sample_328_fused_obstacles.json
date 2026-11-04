@@ -1,0 +1,98 @@
+[
+  {
+    "class": "car",
+    "bbox": [
+      532,
+      478,
+      933,
+      824
+    ],
+    "confidence": 0.8842,
+    "radar_matched": true,
+    "radar_point_count": 2,
+    "distance_m": 6.79,
+    "relative_speed_mps": 0.96,
+    "radar_point_indices": [
+      0,
+      2
+    ]
+  },
+  {
+    "class": "car",
+    "bbox": [
+      185,
+      508,
+      330,
+      623
+    ],
+    "confidence": 0.6868,
+    "radar_matched": true,
+    "radar_point_count": 2,
+    "distance_m": 48.44,
+    "relative_speed_mps": 0.1,
+    "radar_point_indices": [
+      17,
+      21
+    ]
+  },
+  {
+    "class": "person",
+    "bbox": [
+      1261,
+      573,
+      1288,
+      656
+    ],
+    "confidence": 0.567,
+    "radar_matched": false,
+    "radar_point_count": 0,
+    "distance_m": null,
+    "relative_speed_mps": null,
+    "radar_point_indices": []
+  },
+  {
+    "class": "person",
+    "bbox": [
+      981,
+      569,
+      1011,
+      649
+    ],
+    "confidence": 0.5598,
+    "radar_matched": false,
+    "radar_point_count": 0,
+    "distance_m": null,
+    "relative_speed_mps": null,
+    "radar_point_indices": []
+  },
+  {
+    "class": "person",
+    "bbox": [
+      1033,
+      571,
+      1065,
+      657
+    ],
+    "confidence": 0.5184,
+    "radar_matched": false,
+    "radar_point_count": 0,
+    "distance_m": null,
+    "relative_speed_mps": null,
+    "radar_point_indices": []
+  },
+  {
+    "class": "person",
+    "bbox": [
+      1028,
+      522,
+      1065,
+      659
+    ],
+    "confidence": 0.469,
+    "radar_matched": false,
+    "radar_point_count": 0,
+    "distance_m": null,
+    "relative_speed_mps": null,
+    "radar_point_indices": []
+  }
+]

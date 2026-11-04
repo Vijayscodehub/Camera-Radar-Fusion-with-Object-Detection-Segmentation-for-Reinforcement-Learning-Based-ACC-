@@ -1,0 +1,25 @@
+[
+  {
+    "class": "car",
+    "bbox": [
+      0,
+      326,
+      564,
+      728
+    ],
+    "confidence": 0.8624,
+    "radar_matched": true,
+    "radar_point_count": 7,
+    "distance_m": 24.04,
+    "relative_speed_mps": 0.11,
+    "radar_point_indices": [
+      0,
+      2,
+      4,
+      8,
+      15,
+      17,
+      56
+    ]
+  }
+]

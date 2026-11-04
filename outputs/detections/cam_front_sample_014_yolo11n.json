@@ -1,0 +1,92 @@
+[
+  {
+    "class": "person",
+    "bbox": [
+      1350,
+      456,
+      1388,
+      572
+    ],
+    "confidence": 0.7634
+  },
+  {
+    "class": "person",
+    "bbox": [
+      1171,
+      442,
+      1210,
+      560
+    ],
+    "confidence": 0.7202
+  },
+  {
+    "class": "truck",
+    "bbox": [
+      75,
+      368,
+      271,
+      476
+    ],
+    "confidence": 0.6741
+  },
+  {
+    "class": "truck",
+    "bbox": [
+      221,
+      407,
+      510,
+      601
+    ],
+    "confidence": 0.5666
+  },
+  {
+    "class": "person",
+    "bbox": [
+      1297,
+      442,
+      1345,
+      565
+    ],
+    "confidence": 0.5504
+  },
+  {
+    "class": "person",
+    "bbox": [
+      1535,
+      461,
+      1599,
+      697
+    ],
+    "confidence": 0.4992
+  },
+  {
+    "class": "car",
+    "bbox": [
+      220,
+      412,
+      510,
+      601
+    ],
+    "confidence": 0.47
+  },
+  {
+    "class": "person",
+    "bbox": [
+      1245,
+      458,
+      1284,
+      558
+    ],
+    "confidence": 0.4567
+  },
+  {
+    "class": "person",
+    "bbox": [
+      1208,
+      452,
+      1244,
+      559
+    ],
+    "confidence": 0.4474
+  }
+]

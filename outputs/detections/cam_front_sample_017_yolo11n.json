@@ -1,0 +1,52 @@
+[
+  {
+    "class": "car",
+    "bbox": [
+      130,
+      416,
+      481,
+      639
+    ],
+    "confidence": 0.7374
+  },
+  {
+    "class": "car",
+    "bbox": [
+      705,
+      459,
+      789,
+      507
+    ],
+    "confidence": 0.6854
+  },
+  {
+    "class": "truck",
+    "bbox": [
+      392,
+      385,
+      600,
+      506
+    ],
+    "confidence": 0.5561
+  },
+  {
+    "class": "car",
+    "bbox": [
+      510,
+      427,
+      602,
+      497
+    ],
+    "confidence": 0.3989
+  },
+  {
+    "class": "truck",
+    "bbox": [
+      648,
+      367,
+      809,
+      500
+    ],
+    "confidence": 0.3962
+  }
+]

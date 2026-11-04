@@ -1,0 +1,62 @@
+[
+  {
+    "class": "car",
+    "bbox": [
+      1148,
+      474,
+      1409,
+      571
+    ],
+    "confidence": 0.7944
+  },
+  {
+    "class": "truck",
+    "bbox": [
+      754,
+      395,
+      1002,
+      545
+    ],
+    "confidence": 0.623
+  },
+  {
+    "class": "bus",
+    "bbox": [
+      1401,
+      210,
+      1600,
+      585
+    ],
+    "confidence": 0.607
+  },
+  {
+    "class": "truck",
+    "bbox": [
+      166,
+      417,
+      494,
+      668
+    ],
+    "confidence": 0.5162
+  },
+  {
+    "class": "truck",
+    "bbox": [
+      1056,
+      339,
+      1438,
+      542
+    ],
+    "confidence": 0.4552
+  },
+  {
+    "class": "car",
+    "bbox": [
+      165,
+      417,
+      494,
+      669
+    ],
+    "confidence": 0.4208
+  }
+]

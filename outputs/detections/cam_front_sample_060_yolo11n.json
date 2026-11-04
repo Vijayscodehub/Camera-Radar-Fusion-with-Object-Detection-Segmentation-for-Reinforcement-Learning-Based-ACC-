@@ -1,0 +1,92 @@
+[
+  {
+    "class": "car",
+    "bbox": [
+      54,
+      497,
+      511,
+      679
+    ],
+    "confidence": 0.9083
+  },
+  {
+    "class": "car",
+    "bbox": [
+      834,
+      461,
+      983,
+      587
+    ],
+    "confidence": 0.8915
+  },
+  {
+    "class": "car",
+    "bbox": [
+      1003,
+      470,
+      1086,
+      529
+    ],
+    "confidence": 0.6762
+  },
+  {
+    "class": "car",
+    "bbox": [
+      1319,
+      454,
+      1385,
+      499
+    ],
+    "confidence": 0.6099
+  },
+  {
+    "class": "car",
+    "bbox": [
+      759,
+      471,
+      795,
+      497
+    ],
+    "confidence": 0.5684
+  },
+  {
+    "class": "car",
+    "bbox": [
+      1568,
+      631,
+      1600,
+      782
+    ],
+    "confidence": 0.4319
+  },
+  {
+    "class": "car",
+    "bbox": [
+      701,
+      470,
+      735,
+      507
+    ],
+    "confidence": 0.3853
+  },
+  {
+    "class": "person",
+    "bbox": [
+      137,
+      481,
+      174,
+      545
+    ],
+    "confidence": 0.3656
+  },
+  {
+    "class": "car",
+    "bbox": [
+      620,
+      454,
+      703,
+      525
+    ],
+    "confidence": 0.3502
+  }
+]

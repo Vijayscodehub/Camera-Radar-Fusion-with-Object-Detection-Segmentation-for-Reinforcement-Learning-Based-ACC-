@@ -1,0 +1,56 @@
+[
+  {
+    "class": "truck",
+    "bbox": [
+      1,
+      292,
+      483,
+      733
+    ],
+    "confidence": 0.5473,
+    "radar_matched": true,
+    "radar_point_count": 4,
+    "distance_m": 17.45,
+    "relative_speed_mps": 0.03,
+    "radar_point_indices": [
+      0,
+      4,
+      8,
+      21
+    ]
+  },
+  {
+    "class": "bicycle",
+    "bbox": [
+      508,
+      476,
+      646,
+      571
+    ],
+    "confidence": 0.5169,
+    "radar_matched": true,
+    "radar_point_count": 3,
+    "distance_m": 58.31,
+    "relative_speed_mps": 0.1,
+    "radar_point_indices": [
+      15,
+      44,
+      54
+    ]
+  },
+  {
+    "class": "car",
+    "bbox": [
+      968,
+      468,
+      1020,
+      498
+    ],
+    "confidence": 0.382,
+    "radar_matched": false,
+    "radar_point_count": 0,
+    "distance_m": null,
+    "relative_speed_mps": null,
+    "radar_point_indices": []
+  }
+]

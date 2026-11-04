@@ -1,0 +1,15 @@
+{
+  "model_directory": "outputs/ppo_approach_tuned2",
+  "episodes": 100,
+  "max_steps": 150,
+  "seed": 1000,
+  "lead_episodes": 86,
+  "no_lead_episodes": 14,
+  "collision_count": 5,
+  "collision_rate": 0.05,
+  "lead_collision_rate": 0.0581,
+  "mean_total_reward": 69.576,
+  "mean_final_gap_error_m": 4.602,
+  "mean_action_changes": 67.5,
+  "mean_episode_steps": 142.93
+}

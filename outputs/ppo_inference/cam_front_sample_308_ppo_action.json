@@ -1,0 +1,14 @@
+{
+  "sample_index": 308,
+  "phase6_state_path": "outputs/decision/cam_front_sample_308_scene_state.json",
+  "ppo_model_path": "outputs/ppo_approach_tuned2/ppo_acc_model.zip",
+  "ppo_observation": [
+    1.0,
+    20.040000915527344,
+    13.579999923706055,
+    13.899999618530273,
+    1.0
+  ],
+  "recommended_action": "BRAKE",
+  "conversion_assumption": "Phase 6 lead_relative_speed_mps is used directly as the PPO simulator closing_speed_mps for this proof-of-concept inference. Its real radar-axis sign and physical meaning are not yet calibrated."
+}

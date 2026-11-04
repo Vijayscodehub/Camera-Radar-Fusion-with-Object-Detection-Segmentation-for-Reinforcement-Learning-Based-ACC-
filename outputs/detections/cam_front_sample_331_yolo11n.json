@@ -1,0 +1,52 @@
+[
+  {
+    "class": "car",
+    "bbox": [
+      214,
+      478,
+      725,
+      813
+    ],
+    "confidence": 0.9131
+  },
+  {
+    "class": "car",
+    "bbox": [
+      0,
+      485,
+      221,
+      624
+    ],
+    "confidence": 0.6931
+  },
+  {
+    "class": "person",
+    "bbox": [
+      1126,
+      554,
+      1168,
+      648
+    ],
+    "confidence": 0.567
+  },
+  {
+    "class": "person",
+    "bbox": [
+      744,
+      542,
+      774,
+      634
+    ],
+    "confidence": 0.4453
+  },
+  {
+    "class": "person",
+    "bbox": [
+      1056,
+      539,
+      1081,
+      637
+    ],
+    "confidence": 0.3901
+  }
+]

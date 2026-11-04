@@ -1,0 +1,140 @@
+[
+  {
+    "class": "car",
+    "bbox": [
+      188,
+      407,
+      503,
+      607
+    ],
+    "confidence": 0.7827,
+    "radar_matched": true,
+    "radar_point_count": 7,
+    "distance_m": 52.0,
+    "relative_speed_mps": 0.04,
+    "radar_point_indices": [
+      3,
+      4,
+      18,
+      34,
+      36,
+      48,
+      55
+    ]
+  },
+  {
+    "class": "person",
+    "bbox": [
+      1467,
+      437,
+      1514,
+      578
+    ],
+    "confidence": 0.7251,
+    "radar_matched": false,
+    "radar_point_count": 0,
+    "distance_m": null,
+    "relative_speed_mps": null,
+    "radar_point_indices": []
+  },
+  {
+    "class": "person",
+    "bbox": [
+      1532,
+      434,
+      1595,
+      579
+    ],
+    "confidence": 0.7018,
+    "radar_matched": false,
+    "radar_point_count": 0,
+    "distance_m": null,
+    "relative_speed_mps": null,
+    "radar_point_indices": []
+  },
+  {
+    "class": "person",
+    "bbox": [
+      1416,
+      448,
+      1457,
+      577
+    ],
+    "confidence": 0.6611,
+    "radar_matched": false,
+    "radar_point_count": 0,
+    "distance_m": null,
+    "relative_speed_mps": null,
+    "radar_point_indices": []
+  },
+  {
+    "class": "person",
+    "bbox": [
+      1371,
+      447,
+      1425,
+      578
+    ],
+    "confidence": 0.6363,
+    "radar_matched": true,
+    "radar_point_count": 4,
+    "distance_m": 83.43,
+    "relative_speed_mps": 0.09,
+    "radar_point_indices": [
+      32,
+      52,
+      56,
+      59
+    ]
+  },
+  {
+    "class": "person",
+    "bbox": [
+      1082,
+      432,
+      1157,
+      622
+    ],
+    "confidence": 0.4669,
+    "radar_matched": false,
+    "radar_point_count": 0,
+    "distance_m": null,
+    "relative_speed_mps": null,
+    "radar_point_indices": []
+  },
+  {
+    "class": "person",
+    "bbox": [
+      1369,
+      444,
+      1402,
+      577
+    ],
+    "confidence": 0.4019,
+    "radar_matched": true,
+    "radar_point_count": 4,
+    "distance_m": 70.92,
+    "relative_speed_mps": 0.09,
+    "radar_point_indices": [
+      32,
+      43,
+      52,
+      59
+    ]
+  },
+  {
+    "class": "truck",
+    "bbox": [
+      172,
+      367,
+      347,
+      482
+    ],
+    "confidence": 0.3587,
+    "radar_matched": false,
+    "radar_point_count": 0,
+    "distance_m": null,
+    "relative_speed_mps": null,
+    "radar_point_indices": []
+  }
+]

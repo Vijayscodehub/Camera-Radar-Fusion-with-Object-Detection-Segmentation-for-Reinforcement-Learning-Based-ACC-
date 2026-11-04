@@ -1,0 +1,131 @@
+[
+  {
+    "class": "car",
+    "bbox": [
+      968,
+      466,
+      1111,
+      535
+    ],
+    "confidence": 0.6932,
+    "radar_matched": true,
+    "radar_point_count": 5,
+    "distance_m": 42.38,
+    "relative_speed_mps": 0.11,
+    "radar_point_indices": [
+      30,
+      31,
+      33,
+      37,
+      53
+    ]
+  },
+  {
+    "class": "truck",
+    "bbox": [
+      616,
+      390,
+      847,
+      531
+    ],
+    "confidence": 0.5945,
+    "radar_matched": true,
+    "radar_point_count": 8,
+    "distance_m": 77.41,
+    "relative_speed_mps": 0.06,
+    "radar_point_indices": [
+      24,
+      25,
+      26,
+      46,
+      50,
+      51,
+      54,
+      55
+    ]
+  },
+  {
+    "class": "truck",
+    "bbox": [
+      129,
+      402,
+      464,
+      650
+    ],
+    "confidence": 0.4999,
+    "radar_matched": true,
+    "radar_point_count": 5,
+    "distance_m": 17.14,
+    "relative_speed_mps": 0.62,
+    "radar_point_indices": [
+      8,
+      10,
+      19,
+      42,
+      43
+    ]
+  },
+  {
+    "class": "car",
+    "bbox": [
+      129,
+      402,
+      464,
+      650
+    ],
+    "confidence": 0.491,
+    "radar_matched": true,
+    "radar_point_count": 5,
+    "distance_m": 17.14,
+    "relative_speed_mps": 0.62,
+    "radar_point_indices": [
+      8,
+      10,
+      19,
+      42,
+      43
+    ]
+  },
+  {
+    "class": "truck",
+    "bbox": [
+      898,
+      348,
+      1150,
+      525
+    ],
+    "confidence": 0.4702,
+    "radar_matched": true,
+    "radar_point_count": 8,
+    "distance_m": 46.58,
+    "relative_speed_mps": 0.1,
+    "radar_point_indices": [
+      30,
+      31,
+      33,
+      34,
+      37,
+      44,
+      48,
+      53
+    ]
+  },
+  {
+    "class": "truck",
+    "bbox": [
+      1108,
+      274,
+      1546,
+      555
+    ],
+    "confidence": 0.3907,
+    "radar_matched": true,
+    "radar_point_count": 2,
+    "distance_m": 17.69,
+    "relative_speed_mps": -0.01,
+    "radar_point_indices": [
+      18,
+      20
+    ]
+  }
+]

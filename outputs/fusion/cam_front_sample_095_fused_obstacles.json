@@ -1,0 +1,87 @@
+[
+  {
+    "class": "car",
+    "bbox": [
+      1059,
+      449,
+      1396,
+      552
+    ],
+    "confidence": 0.8755,
+    "radar_matched": true,
+    "radar_point_count": 6,
+    "distance_m": 39.1,
+    "relative_speed_mps": 0.0,
+    "radar_point_indices": [
+      2,
+      3,
+      4,
+      26,
+      35,
+      41
+    ]
+  },
+  {
+    "class": "person",
+    "bbox": [
+      122,
+      425,
+      236,
+      766
+    ],
+    "confidence": 0.7727,
+    "radar_matched": true,
+    "radar_point_count": 1,
+    "distance_m": 39.87,
+    "relative_speed_mps": 0.18,
+    "radar_point_indices": [
+      19
+    ]
+  },
+  {
+    "class": "person",
+    "bbox": [
+      11,
+      455,
+      139,
+      751
+    ],
+    "confidence": 0.7318,
+    "radar_matched": true,
+    "radar_point_count": 2,
+    "distance_m": 50.83,
+    "relative_speed_mps": 0.09,
+    "radar_point_indices": [
+      19,
+      28
+    ]
+  },
+  {
+    "class": "bus",
+    "bbox": [
+      316,
+      413,
+      637,
+      545
+    ],
+    "confidence": 0.7159,
+    "radar_matched": true,
+    "radar_point_count": 12,
+    "distance_m": 31.88,
+    "relative_speed_mps": 1.84,
+    "radar_point_indices": [
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      32,
+      37,
+      38,
+      40
+    ]
+  }
+]

@@ -1,0 +1,72 @@
+[
+  {
+    "class": "car",
+    "bbox": [
+      1392,
+      461,
+      1489,
+      522
+    ],
+    "confidence": 0.6657
+  },
+  {
+    "class": "person",
+    "bbox": [
+      60,
+      406,
+      115,
+      565
+    ],
+    "confidence": 0.5925
+  },
+  {
+    "class": "truck",
+    "bbox": [
+      12,
+      370,
+      196,
+      479
+    ],
+    "confidence": 0.5877
+  },
+  {
+    "class": "person",
+    "bbox": [
+      951,
+      447,
+      978,
+      524
+    ],
+    "confidence": 0.525
+  },
+  {
+    "class": "car",
+    "bbox": [
+      1168,
+      477,
+      1217,
+      508
+    ],
+    "confidence": 0.5128
+  },
+  {
+    "class": "person",
+    "bbox": [
+      1064,
+      439,
+      1111,
+      586
+    ],
+    "confidence": 0.471
+  },
+  {
+    "class": "truck",
+    "bbox": [
+      330,
+      410,
+      574,
+      580
+    ],
+    "confidence": 0.4567
+  }
+]

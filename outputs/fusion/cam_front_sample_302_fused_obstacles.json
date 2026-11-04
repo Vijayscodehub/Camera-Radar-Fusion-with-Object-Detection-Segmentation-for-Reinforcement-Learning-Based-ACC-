@@ -1,0 +1,40 @@
+[
+  {
+    "class": "car",
+    "bbox": [
+      765,
+      475,
+      870,
+      568
+    ],
+    "confidence": 0.6234,
+    "radar_matched": true,
+    "radar_point_count": 4,
+    "distance_m": 52.53,
+    "relative_speed_mps": 15.36,
+    "radar_point_indices": [
+      14,
+      48,
+      59,
+      63
+    ]
+  },
+  {
+    "class": "car",
+    "bbox": [
+      1266,
+      490,
+      1349,
+      533
+    ],
+    "confidence": 0.4276,
+    "radar_matched": true,
+    "radar_point_count": 2,
+    "distance_m": 30.6,
+    "relative_speed_mps": -2.9,
+    "radar_point_indices": [
+      17,
+      22
+    ]
+  }
+]

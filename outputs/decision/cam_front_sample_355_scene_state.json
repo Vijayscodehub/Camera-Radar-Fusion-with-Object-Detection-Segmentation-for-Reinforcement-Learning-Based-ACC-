@@ -1,0 +1,15 @@
+{
+  "sample_index": 355,
+  "lead_present": false,
+  "lead_class": null,
+  "lead_bbox": null,
+  "lead_distance_m": null,
+  "lead_relative_speed_mps": null,
+  "lead_confidence": null,
+  "lead_radar_point_count": 0,
+  "lead_footpoint_drivable_fraction": null,
+  "lead_candidate_count": 0,
+  "drivable_ahead": true,
+  "drivable_ahead_fraction": 0.813,
+  "ego_speed_mps": 13.9
+}

@@ -1,0 +1,20 @@
+{
+  "sample_index": 11,
+  "lead_present": true,
+  "lead_class": "bus",
+  "lead_bbox": [
+    400,
+    418,
+    607,
+    572
+  ],
+  "lead_distance_m": 28.31,
+  "lead_relative_speed_mps": -0.12,
+  "lead_confidence": 0.4576,
+  "lead_radar_point_count": 6,
+  "lead_footpoint_drivable_fraction": 0.602,
+  "lead_candidate_count": 1,
+  "drivable_ahead": true,
+  "drivable_ahead_fraction": 0.861,
+  "ego_speed_mps": 13.9
+}

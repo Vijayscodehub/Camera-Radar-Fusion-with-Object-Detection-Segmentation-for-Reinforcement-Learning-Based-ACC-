@@ -1,0 +1,20 @@
+{
+  "sample_index": 286,
+  "lead_present": true,
+  "lead_class": "car",
+  "lead_bbox": [
+    568,
+    473,
+    706,
+    591
+  ],
+  "lead_distance_m": 15.15,
+  "lead_relative_speed_mps": 9.62,
+  "lead_confidence": 0.7271,
+  "lead_radar_point_count": 1,
+  "lead_footpoint_drivable_fraction": 1.0,
+  "lead_candidate_count": 1,
+  "drivable_ahead": true,
+  "drivable_ahead_fraction": 0.948,
+  "ego_speed_mps": 13.9
+}

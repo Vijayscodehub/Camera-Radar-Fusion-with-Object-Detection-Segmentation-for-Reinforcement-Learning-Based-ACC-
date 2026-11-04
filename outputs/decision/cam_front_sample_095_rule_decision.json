@@ -1,0 +1,11 @@
+{
+  "sample_index": 95,
+  "recommended_action": "ACCELERATE",
+  "decision_reason": "Lead object is beyond the maintain-distance threshold.",
+  "lead_class": "bus",
+  "lead_distance_m": 31.88,
+  "lead_relative_speed_mps": 1.84,
+  "ttc_s": 17.33,
+  "drivable_ahead": true,
+  "ego_speed_mps": 13.9
+}

@@ -1,0 +1,24 @@
+[
+  {
+    "class": "truck",
+    "bbox": [
+      530,
+      409,
+      873,
+      740
+    ],
+    "confidence": 0.5139,
+    "radar_matched": true,
+    "radar_point_count": 6,
+    "distance_m": 14.72,
+    "relative_speed_mps": 1.14,
+    "radar_point_indices": [
+      0,
+      3,
+      4,
+      9,
+      17,
+      59
+    ]
+  }
+]

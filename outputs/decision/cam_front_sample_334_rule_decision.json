@@ -1,0 +1,11 @@
+{
+  "sample_index": 334,
+  "recommended_action": "ACCELERATE",
+  "decision_reason": "No radar-matched lead vehicle is on the drivable area.",
+  "lead_class": null,
+  "lead_distance_m": null,
+  "lead_relative_speed_mps": null,
+  "ttc_s": null,
+  "drivable_ahead": true,
+  "ego_speed_mps": 13.9
+}

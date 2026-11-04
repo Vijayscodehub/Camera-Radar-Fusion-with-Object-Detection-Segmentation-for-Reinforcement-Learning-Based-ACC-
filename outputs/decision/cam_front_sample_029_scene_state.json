@@ -1,0 +1,20 @@
+{
+  "sample_index": 29,
+  "lead_present": true,
+  "lead_class": "truck",
+  "lead_bbox": [
+    545,
+    404,
+    896,
+    745
+  ],
+  "lead_distance_m": 7.03,
+  "lead_relative_speed_mps": 2.73,
+  "lead_confidence": 0.613,
+  "lead_radar_point_count": 3,
+  "lead_footpoint_drivable_fraction": 1.0,
+  "lead_candidate_count": 1,
+  "drivable_ahead": true,
+  "drivable_ahead_fraction": 0.392,
+  "ego_speed_mps": 13.9
+}

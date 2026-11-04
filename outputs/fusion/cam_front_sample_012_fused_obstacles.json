@@ -1,0 +1,125 @@
+[
+  {
+    "class": "car",
+    "bbox": [
+      1392,
+      461,
+      1489,
+      522
+    ],
+    "confidence": 0.6657,
+    "radar_matched": true,
+    "radar_point_count": 3,
+    "distance_m": 51.03,
+    "relative_speed_mps": -0.11,
+    "radar_point_indices": [
+      39,
+      40,
+      44
+    ]
+  },
+  {
+    "class": "person",
+    "bbox": [
+      60,
+      406,
+      115,
+      565
+    ],
+    "confidence": 0.5925,
+    "radar_matched": true,
+    "radar_point_count": 1,
+    "distance_m": 46.57,
+    "relative_speed_mps": -0.04,
+    "radar_point_indices": [
+      31
+    ]
+  },
+  {
+    "class": "truck",
+    "bbox": [
+      12,
+      370,
+      196,
+      479
+    ],
+    "confidence": 0.5877,
+    "radar_matched": false,
+    "radar_point_count": 0,
+    "distance_m": null,
+    "relative_speed_mps": null,
+    "radar_point_indices": []
+  },
+  {
+    "class": "person",
+    "bbox": [
+      951,
+      447,
+      978,
+      524
+    ],
+    "confidence": 0.525,
+    "radar_matched": true,
+    "radar_point_count": 1,
+    "distance_m": 51.98,
+    "relative_speed_mps": -0.12,
+    "radar_point_indices": [
+      42
+    ]
+  },
+  {
+    "class": "car",
+    "bbox": [
+      1168,
+      477,
+      1217,
+      508
+    ],
+    "confidence": 0.5128,
+    "radar_matched": false,
+    "radar_point_count": 0,
+    "distance_m": null,
+    "relative_speed_mps": null,
+    "radar_point_indices": []
+  },
+  {
+    "class": "person",
+    "bbox": [
+      1064,
+      439,
+      1111,
+      586
+    ],
+    "confidence": 0.471,
+    "radar_matched": true,
+    "radar_point_count": 2,
+    "distance_m": 56.3,
+    "relative_speed_mps": -0.02,
+    "radar_point_indices": [
+      33,
+      54
+    ]
+  },
+  {
+    "class": "truck",
+    "bbox": [
+      330,
+      410,
+      574,
+      580
+    ],
+    "confidence": 0.4567,
+    "radar_matched": true,
+    "radar_point_count": 6,
+    "distance_m": 36.75,
+    "relative_speed_mps": -0.01,
+    "radar_point_indices": [
+      3,
+      17,
+      21,
+      22,
+      57,
+      61
+    ]
+  }
+]

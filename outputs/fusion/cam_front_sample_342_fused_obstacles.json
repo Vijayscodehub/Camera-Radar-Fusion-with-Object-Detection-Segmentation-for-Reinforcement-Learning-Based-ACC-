@@ -1,0 +1,73 @@
+[
+  {
+    "class": "car",
+    "bbox": [
+      738,
+      448,
+      882,
+      579
+    ],
+    "confidence": 0.5893,
+    "radar_matched": true,
+    "radar_point_count": 3,
+    "distance_m": 68.61,
+    "relative_speed_mps": 0.01,
+    "radar_point_indices": [
+      7,
+      45,
+      62
+    ]
+  },
+  {
+    "class": "car",
+    "bbox": [
+      1343,
+      463,
+      1596,
+      606
+    ],
+    "confidence": 0.4993,
+    "radar_matched": true,
+    "radar_point_count": 12,
+    "distance_m": 76.68,
+    "relative_speed_mps": 0.06,
+    "radar_point_indices": [
+      4,
+      9,
+      15,
+      28,
+      49,
+      50,
+      51,
+      52,
+      55,
+      57,
+      58,
+      64
+    ]
+  },
+  {
+    "class": "car",
+    "bbox": [
+      1348,
+      464,
+      1528,
+      601
+    ],
+    "confidence": 0.4979,
+    "radar_matched": true,
+    "radar_point_count": 8,
+    "distance_m": 77.24,
+    "relative_speed_mps": 0.08,
+    "radar_point_indices": [
+      15,
+      49,
+      50,
+      51,
+      52,
+      55,
+      57,
+      58
+    ]
+  }
+]

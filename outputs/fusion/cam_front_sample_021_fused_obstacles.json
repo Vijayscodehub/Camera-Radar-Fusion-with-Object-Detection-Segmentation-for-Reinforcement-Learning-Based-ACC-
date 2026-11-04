@@ -1,0 +1,96 @@
+[
+  {
+    "class": "truck",
+    "bbox": [
+      1263,
+      326,
+      1599,
+      560
+    ],
+    "confidence": 0.8475,
+    "radar_matched": true,
+    "radar_point_count": 7,
+    "distance_m": 40.74,
+    "relative_speed_mps": 0.16,
+    "radar_point_indices": [
+      11,
+      23,
+      27,
+      29,
+      35,
+      52,
+      54
+    ]
+  },
+  {
+    "class": "truck",
+    "bbox": [
+      910,
+      390,
+      1183,
+      554
+    ],
+    "confidence": 0.7561,
+    "radar_matched": true,
+    "radar_point_count": 10,
+    "distance_m": 37.09,
+    "relative_speed_mps": 0.1,
+    "radar_point_indices": [
+      15,
+      16,
+      17,
+      20,
+      21,
+      36,
+      45,
+      48,
+      58,
+      60
+    ]
+  },
+  {
+    "class": "car",
+    "bbox": [
+      1385,
+      484,
+      1600,
+      601
+    ],
+    "confidence": 0.6457,
+    "radar_matched": true,
+    "radar_point_count": 4,
+    "distance_m": 37.55,
+    "relative_speed_mps": 0.14,
+    "radar_point_indices": [
+      9,
+      23,
+      29,
+      35
+    ]
+  },
+  {
+    "class": "bus",
+    "bbox": [
+      227,
+      405,
+      542,
+      669
+    ],
+    "confidence": 0.5894,
+    "radar_matched": true,
+    "radar_point_count": 9,
+    "distance_m": 70.32,
+    "relative_speed_mps": 0.19,
+    "radar_point_indices": [
+      3,
+      4,
+      5,
+      6,
+      53,
+      55,
+      57,
+      59,
+      61
+    ]
+  }
+]

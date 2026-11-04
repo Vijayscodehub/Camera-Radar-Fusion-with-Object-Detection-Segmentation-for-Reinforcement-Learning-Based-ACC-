@@ -1,0 +1,60 @@
+[
+  {
+    "class": "truck",
+    "bbox": [
+      1430,
+      368,
+      1599,
+      588
+    ],
+    "confidence": 0.6241,
+    "radar_matched": true,
+    "radar_point_count": 4,
+    "distance_m": 33.97,
+    "relative_speed_mps": 0.07,
+    "radar_point_indices": [
+      9,
+      11,
+      20,
+      22
+    ]
+  },
+  {
+    "class": "bus",
+    "bbox": [
+      382,
+      394,
+      714,
+      719
+    ],
+    "confidence": 0.5494,
+    "radar_matched": true,
+    "radar_point_count": 3,
+    "distance_m": 8.32,
+    "relative_speed_mps": 2.4,
+    "radar_point_indices": [
+      0,
+      1,
+      57
+    ]
+  },
+  {
+    "class": "truck",
+    "bbox": [
+      382,
+      392,
+      713,
+      720
+    ],
+    "confidence": 0.4949,
+    "radar_matched": true,
+    "radar_point_count": 3,
+    "distance_m": 8.32,
+    "relative_speed_mps": 2.4,
+    "radar_point_indices": [
+      0,
+      1,
+      57
+    ]
+  }
+]

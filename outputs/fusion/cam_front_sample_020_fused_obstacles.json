@@ -1,0 +1,138 @@
+[
+  {
+    "class": "car",
+    "bbox": [
+      1148,
+      474,
+      1409,
+      571
+    ],
+    "confidence": 0.7944,
+    "radar_matched": true,
+    "radar_point_count": 8,
+    "distance_m": 39.86,
+    "relative_speed_mps": 0.16,
+    "radar_point_indices": [
+      7,
+      8,
+      19,
+      20,
+      21,
+      25,
+      27,
+      47
+    ]
+  },
+  {
+    "class": "truck",
+    "bbox": [
+      754,
+      395,
+      1002,
+      545
+    ],
+    "confidence": 0.623,
+    "radar_matched": true,
+    "radar_point_count": 6,
+    "distance_m": 27.23,
+    "relative_speed_mps": 0.03,
+    "radar_point_indices": [
+      13,
+      14,
+      15,
+      17,
+      29,
+      49
+    ]
+  },
+  {
+    "class": "bus",
+    "bbox": [
+      1401,
+      210,
+      1600,
+      585
+    ],
+    "confidence": 0.607,
+    "radar_matched": true,
+    "radar_point_count": 2,
+    "distance_m": 44.0,
+    "relative_speed_mps": 0.14,
+    "radar_point_indices": [
+      23,
+      24
+    ]
+  },
+  {
+    "class": "truck",
+    "bbox": [
+      166,
+      417,
+      494,
+      668
+    ],
+    "confidence": 0.5162,
+    "radar_matched": true,
+    "radar_point_count": 8,
+    "distance_m": 67.59,
+    "relative_speed_mps": 0.16,
+    "radar_point_indices": [
+      4,
+      6,
+      31,
+      39,
+      42,
+      43,
+      52,
+      55
+    ]
+  },
+  {
+    "class": "truck",
+    "bbox": [
+      1056,
+      339,
+      1438,
+      542
+    ],
+    "confidence": 0.4552,
+    "radar_matched": true,
+    "radar_point_count": 8,
+    "distance_m": 43.86,
+    "relative_speed_mps": 0.15,
+    "radar_point_indices": [
+      12,
+      19,
+      20,
+      21,
+      25,
+      27,
+      44,
+      47
+    ]
+  },
+  {
+    "class": "car",
+    "bbox": [
+      165,
+      417,
+      494,
+      669
+    ],
+    "confidence": 0.4208,
+    "radar_matched": true,
+    "radar_point_count": 8,
+    "distance_m": 67.59,
+    "relative_speed_mps": 0.16,
+    "radar_point_indices": [
+      4,
+      6,
+      31,
+      39,
+      42,
+      43,
+      52,
+      55
+    ]
+  }
+]

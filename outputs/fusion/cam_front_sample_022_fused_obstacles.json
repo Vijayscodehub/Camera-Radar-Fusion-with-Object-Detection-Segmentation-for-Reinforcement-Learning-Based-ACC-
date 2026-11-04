@@ -1,0 +1,68 @@
+[
+  {
+    "class": "truck",
+    "bbox": [
+      1053,
+      387,
+      1368,
+      566
+    ],
+    "confidence": 0.7802,
+    "radar_matched": true,
+    "radar_point_count": 8,
+    "distance_m": 24.05,
+    "relative_speed_mps": 0.06,
+    "radar_point_indices": [
+      9,
+      10,
+      11,
+      12,
+      14,
+      15,
+      19,
+      55
+    ]
+  },
+  {
+    "class": "truck",
+    "bbox": [
+      1467,
+      322,
+      1599,
+      582
+    ],
+    "confidence": 0.6135,
+    "radar_matched": true,
+    "radar_point_count": 6,
+    "distance_m": 45.62,
+    "relative_speed_mps": -0.09,
+    "radar_point_indices": [
+      7,
+      18,
+      20,
+      41,
+      48,
+      51
+    ]
+  },
+  {
+    "class": "truck",
+    "bbox": [
+      289,
+      409,
+      586,
+      687
+    ],
+    "confidence": 0.475,
+    "radar_matched": true,
+    "radar_point_count": 4,
+    "distance_m": 76.48,
+    "relative_speed_mps": 0.14,
+    "radar_point_indices": [
+      0,
+      54,
+      57,
+      59
+    ]
+  }
+]

@@ -1,0 +1,546 @@
+[
+  {
+    "radar_point_index": 0,
+    "x_m": 2.8,
+    "y_m": -5.1,
+    "distance_m": 5.82,
+    "relative_velocity_mps": 0.02,
+    "lateral_velocity_mps": -0.04
+  },
+  {
+    "radar_point_index": 1,
+    "x_m": 3.2,
+    "y_m": -5.3,
+    "distance_m": 6.19,
+    "relative_velocity_mps": 0.02,
+    "lateral_velocity_mps": -0.04
+  },
+  {
+    "radar_point_index": 2,
+    "x_m": 3.2,
+    "y_m": -5.3,
+    "distance_m": 6.19,
+    "relative_velocity_mps": -0.04,
+    "lateral_velocity_mps": 0.07
+  },
+  {
+    "radar_point_index": 3,
+    "x_m": 7.4,
+    "y_m": 10.9,
+    "distance_m": 13.17,
+    "relative_velocity_mps": -0.02,
+    "lateral_velocity_mps": -0.03
+  },
+  {
+    "radar_point_index": 4,
+    "x_m": 16.6,
+    "y_m": 3.3,
+    "distance_m": 16.92,
+    "relative_velocity_mps": -0.01,
+    "lateral_velocity_mps": -0.0
+  },
+  {
+    "radar_point_index": 5,
+    "x_m": 20.8,
+    "y_m": -0.5,
+    "distance_m": 20.81,
+    "relative_velocity_mps": 10.25,
+    "lateral_velocity_mps": -0.25
+  },
+  {
+    "radar_point_index": 6,
+    "x_m": 15.6,
+    "y_m": 18.3,
+    "distance_m": 24.05,
+    "relative_velocity_mps": -0.13,
+    "lateral_velocity_mps": -0.15
+  },
+  {
+    "radar_point_index": 7,
+    "x_m": 23.2,
+    "y_m": 8.9,
+    "distance_m": 24.85,
+    "relative_velocity_mps": -0.01,
+    "lateral_velocity_mps": -0.01
+  },
+  {
+    "radar_point_index": 8,
+    "x_m": 27.0,
+    "y_m": 2.7,
+    "distance_m": 27.13,
+    "relative_velocity_mps": -0.5,
+    "lateral_velocity_mps": -0.05
+  },
+  {
+    "radar_point_index": 9,
+    "x_m": 21.6,
+    "y_m": -19.5,
+    "distance_m": 29.1,
+    "relative_velocity_mps": 0.03,
+    "lateral_velocity_mps": -0.02
+  },
+  {
+    "radar_point_index": 10,
+    "x_m": 29.2,
+    "y_m": 10.3,
+    "distance_m": 30.96,
+    "relative_velocity_mps": -0.01,
+    "lateral_velocity_mps": -0.0
+  },
+  {
+    "radar_point_index": 11,
+    "x_m": 24.0,
+    "y_m": -22.9,
+    "distance_m": 33.17,
+    "relative_velocity_mps": 0.03,
+    "lateral_velocity_mps": -0.03
+  },
+  {
+    "radar_point_index": 12,
+    "x_m": 33.8,
+    "y_m": 8.5,
+    "distance_m": 34.85,
+    "relative_velocity_mps": -0.01,
+    "lateral_velocity_mps": -0.0
+  },
+  {
+    "radar_point_index": 13,
+    "x_m": 36.2,
+    "y_m": 4.9,
+    "distance_m": 36.53,
+    "relative_velocity_mps": -0.0,
+    "lateral_velocity_mps": -0.0
+  },
+  {
+    "radar_point_index": 14,
+    "x_m": 29.6,
+    "y_m": -24.1,
+    "distance_m": 38.17,
+    "relative_velocity_mps": 0.03,
+    "lateral_velocity_mps": -0.02
+  },
+  {
+    "radar_point_index": 15,
+    "x_m": 38.0,
+    "y_m": 4.9,
+    "distance_m": 38.31,
+    "relative_velocity_mps": -0.0,
+    "lateral_velocity_mps": -0.0
+  },
+  {
+    "radar_point_index": 16,
+    "x_m": 38.0,
+    "y_m": 10.3,
+    "distance_m": 39.37,
+    "relative_velocity_mps": -0.01,
+    "lateral_velocity_mps": -0.0
+  },
+  {
+    "radar_point_index": 17,
+    "x_m": 37.0,
+    "y_m": 14.7,
+    "distance_m": 39.81,
+    "relative_velocity_mps": -0.01,
+    "lateral_velocity_mps": -0.01
+  },
+  {
+    "radar_point_index": 18,
+    "x_m": 38.4,
+    "y_m": 16.5,
+    "distance_m": 41.79,
+    "relative_velocity_mps": -0.02,
+    "lateral_velocity_mps": -0.01
+  },
+  {
+    "radar_point_index": 19,
+    "x_m": 39.4,
+    "y_m": 14.7,
+    "distance_m": 42.05,
+    "relative_velocity_mps": -0.23,
+    "lateral_velocity_mps": -0.09
+  },
+  {
+    "radar_point_index": 20,
+    "x_m": 39.6,
+    "y_m": 13.9,
+    "distance_m": 41.97,
+    "relative_velocity_mps": -0.01,
+    "lateral_velocity_mps": -0.0
+  },
+  {
+    "radar_point_index": 21,
+    "x_m": 34.6,
+    "y_m": 24.9,
+    "distance_m": 42.63,
+    "relative_velocity_mps": -0.02,
+    "lateral_velocity_mps": -0.02
+  },
+  {
+    "radar_point_index": 22,
+    "x_m": 35.4,
+    "y_m": 25.5,
+    "distance_m": 43.63,
+    "relative_velocity_mps": -0.02,
+    "lateral_velocity_mps": -0.02
+  },
+  {
+    "radar_point_index": 23,
+    "x_m": 40.8,
+    "y_m": -16.7,
+    "distance_m": 44.09,
+    "relative_velocity_mps": 0.24,
+    "lateral_velocity_mps": -0.1
+  },
+  {
+    "radar_point_index": 24,
+    "x_m": 39.8,
+    "y_m": -19.3,
+    "distance_m": 44.23,
+    "relative_velocity_mps": 0.02,
+    "lateral_velocity_mps": -0.01
+  },
+  {
+    "radar_point_index": 25,
+    "x_m": 44.6,
+    "y_m": -11.3,
+    "distance_m": 46.01,
+    "relative_velocity_mps": -7.03,
+    "lateral_velocity_mps": 1.78
+  },
+  {
+    "radar_point_index": 26,
+    "x_m": 46.2,
+    "y_m": 7.5,
+    "distance_m": 46.8,
+    "relative_velocity_mps": -0.0,
+    "lateral_velocity_mps": -0.0
+  },
+  {
+    "radar_point_index": 27,
+    "x_m": 47.6,
+    "y_m": -8.9,
+    "distance_m": 48.42,
+    "relative_velocity_mps": -10.13,
+    "lateral_velocity_mps": 1.89
+  },
+  {
+    "radar_point_index": 28,
+    "x_m": 48.0,
+    "y_m": 10.5,
+    "distance_m": 49.14,
+    "relative_velocity_mps": -0.01,
+    "lateral_velocity_mps": -0.0
+  },
+  {
+    "radar_point_index": 29,
+    "x_m": 43.4,
+    "y_m": -23.3,
+    "distance_m": 49.26,
+    "relative_velocity_mps": 0.02,
+    "lateral_velocity_mps": -0.01
+  },
+  {
+    "radar_point_index": 30,
+    "x_m": 49.0,
+    "y_m": 6.9,
+    "distance_m": 49.48,
+    "relative_velocity_mps": -0.0,
+    "lateral_velocity_mps": -0.0
+  },
+  {
+    "radar_point_index": 31,
+    "x_m": 46.2,
+    "y_m": 18.5,
+    "distance_m": 49.77,
+    "relative_velocity_mps": -0.01,
+    "lateral_velocity_mps": -0.01
+  },
+  {
+    "radar_point_index": 32,
+    "x_m": 50.2,
+    "y_m": 7.5,
+    "distance_m": 50.76,
+    "relative_velocity_mps": -0.0,
+    "lateral_velocity_mps": -0.0
+  },
+  {
+    "radar_point_index": 33,
+    "x_m": 50.0,
+    "y_m": 12.9,
+    "distance_m": 51.64,
+    "relative_velocity_mps": -0.01,
+    "lateral_velocity_mps": -0.0
+  },
+  {
+    "radar_point_index": 34,
+    "x_m": 53.2,
+    "y_m": 3.3,
+    "distance_m": 53.3,
+    "relative_velocity_mps": 0.0,
+    "lateral_velocity_mps": 0.0
+  },
+  {
+    "radar_point_index": 35,
+    "x_m": 51.8,
+    "y_m": 14.5,
+    "distance_m": 53.79,
+    "relative_velocity_mps": -0.01,
+    "lateral_velocity_mps": -0.0
+  },
+  {
+    "radar_point_index": 36,
+    "x_m": 52.8,
+    "y_m": 14.9,
+    "distance_m": 54.86,
+    "relative_velocity_mps": -0.01,
+    "lateral_velocity_mps": -0.0
+  },
+  {
+    "radar_point_index": 37,
+    "x_m": 41.0,
+    "y_m": -39.5,
+    "distance_m": 56.93,
+    "relative_velocity_mps": 0.16,
+    "lateral_velocity_mps": -0.15
+  },
+  {
+    "radar_point_index": 38,
+    "x_m": 54.8,
+    "y_m": -16.1,
+    "distance_m": 57.12,
+    "relative_velocity_mps": 0.02,
+    "lateral_velocity_mps": -0.01
+  },
+  {
+    "radar_point_index": 39,
+    "x_m": 63.8,
+    "y_m": 2.7,
+    "distance_m": 63.86,
+    "relative_velocity_mps": 0.0,
+    "lateral_velocity_mps": 0.0
+  },
+  {
+    "radar_point_index": 40,
+    "x_m": 58.8,
+    "y_m": -30.1,
+    "distance_m": 66.06,
+    "relative_velocity_mps": 0.22,
+    "lateral_velocity_mps": -0.11
+  },
+  {
+    "radar_point_index": 41,
+    "x_m": 66.8,
+    "y_m": 4.3,
+    "distance_m": 66.94,
+    "relative_velocity_mps": 0.0,
+    "lateral_velocity_mps": 0.0
+  },
+  {
+    "radar_point_index": 42,
+    "x_m": 64.6,
+    "y_m": -20.3,
+    "distance_m": 67.71,
+    "relative_velocity_mps": 0.02,
+    "lateral_velocity_mps": -0.01
+  },
+  {
+    "radar_point_index": 43,
+    "x_m": 63.4,
+    "y_m": -26.3,
+    "distance_m": 68.64,
+    "relative_velocity_mps": 0.02,
+    "lateral_velocity_mps": -0.01
+  },
+  {
+    "radar_point_index": 44,
+    "x_m": 67.6,
+    "y_m": -14.1,
+    "distance_m": 69.05,
+    "relative_velocity_mps": -0.04,
+    "lateral_velocity_mps": 0.01
+  },
+  {
+    "radar_point_index": 45,
+    "x_m": 69.0,
+    "y_m": 8.1,
+    "distance_m": 69.47,
+    "relative_velocity_mps": 0.03,
+    "lateral_velocity_mps": 0.0
+  },
+  {
+    "radar_point_index": 46,
+    "x_m": 69.8,
+    "y_m": -13.9,
+    "distance_m": 71.17,
+    "relative_velocity_mps": -0.03,
+    "lateral_velocity_mps": 0.01
+  },
+  {
+    "radar_point_index": 47,
+    "x_m": 64.0,
+    "y_m": -35.3,
+    "distance_m": 73.09,
+    "relative_velocity_mps": 0.02,
+    "lateral_velocity_mps": -0.01
+  },
+  {
+    "radar_point_index": 48,
+    "x_m": 74.6,
+    "y_m": -10.5,
+    "distance_m": 75.34,
+    "relative_velocity_mps": -7.34,
+    "lateral_velocity_mps": 1.03
+  },
+  {
+    "radar_point_index": 49,
+    "x_m": 74.6,
+    "y_m": -16.5,
+    "distance_m": 76.4,
+    "relative_velocity_mps": -0.04,
+    "lateral_velocity_mps": 0.01
+  },
+  {
+    "radar_point_index": 50,
+    "x_m": 77.4,
+    "y_m": 7.5,
+    "distance_m": 77.76,
+    "relative_velocity_mps": 0.02,
+    "lateral_velocity_mps": 0.0
+  },
+  {
+    "radar_point_index": 51,
+    "x_m": 77.4,
+    "y_m": -10.5,
+    "distance_m": 78.11,
+    "relative_velocity_mps": -7.35,
+    "lateral_velocity_mps": 1.0
+  },
+  {
+    "radar_point_index": 52,
+    "x_m": 75.4,
+    "y_m": -27.3,
+    "distance_m": 80.19,
+    "relative_velocity_mps": -0.06,
+    "lateral_velocity_mps": 0.02
+  },
+  {
+    "radar_point_index": 53,
+    "x_m": 71.0,
+    "y_m": -39.3,
+    "distance_m": 81.15,
+    "relative_velocity_mps": -0.08,
+    "lateral_velocity_mps": 0.05
+  },
+  {
+    "radar_point_index": 54,
+    "x_m": 80.8,
+    "y_m": -10.5,
+    "distance_m": 81.48,
+    "relative_velocity_mps": -0.02,
+    "lateral_velocity_mps": 0.0
+  },
+  {
+    "radar_point_index": 55,
+    "x_m": 72.8,
+    "y_m": -37.3,
+    "distance_m": 81.8,
+    "relative_velocity_mps": -0.08,
+    "lateral_velocity_mps": 0.04
+  },
+  {
+    "radar_point_index": 56,
+    "x_m": 81.8,
+    "y_m": -5.5,
+    "distance_m": 81.98,
+    "relative_velocity_mps": -0.01,
+    "lateral_velocity_mps": 0.0
+  },
+  {
+    "radar_point_index": 57,
+    "x_m": 82.6,
+    "y_m": 3.1,
+    "distance_m": 82.66,
+    "relative_velocity_mps": 0.01,
+    "lateral_velocity_mps": 0.0
+  },
+  {
+    "radar_point_index": 58,
+    "x_m": 83.0,
+    "y_m": 10.3,
+    "distance_m": 83.64,
+    "relative_velocity_mps": 0.03,
+    "lateral_velocity_mps": 0.0
+  },
+  {
+    "radar_point_index": 59,
+    "x_m": 83.6,
+    "y_m": -16.5,
+    "distance_m": 85.21,
+    "relative_velocity_mps": -0.03,
+    "lateral_velocity_mps": 0.01
+  },
+  {
+    "radar_point_index": 60,
+    "x_m": 85.6,
+    "y_m": -10.9,
+    "distance_m": 86.29,
+    "relative_velocity_mps": -7.37,
+    "lateral_velocity_mps": 0.94
+  },
+  {
+    "radar_point_index": 61,
+    "x_m": 74.4,
+    "y_m": -45.5,
+    "distance_m": 87.21,
+    "relative_velocity_mps": -0.09,
+    "lateral_velocity_mps": 0.05
+  },
+  {
+    "radar_point_index": 62,
+    "x_m": 80.0,
+    "y_m": -35.9,
+    "distance_m": 87.69,
+    "relative_velocity_mps": -0.07,
+    "lateral_velocity_mps": 0.03
+  },
+  {
+    "radar_point_index": 63,
+    "x_m": 87.2,
+    "y_m": -11.5,
+    "distance_m": 87.96,
+    "relative_velocity_mps": -0.02,
+    "lateral_velocity_mps": 0.0
+  },
+  {
+    "radar_point_index": 64,
+    "x_m": 86.6,
+    "y_m": -26.3,
+    "distance_m": 90.51,
+    "relative_velocity_mps": -0.05,
+    "lateral_velocity_mps": 0.02
+  },
+  {
+    "radar_point_index": 65,
+    "x_m": 83.8,
+    "y_m": -42.3,
+    "distance_m": 93.87,
+    "relative_velocity_mps": -0.08,
+    "lateral_velocity_mps": 0.04
+  },
+  {
+    "radar_point_index": 66,
+    "x_m": 85.2,
+    "y_m": -42.9,
+    "distance_m": 95.39,
+    "relative_velocity_mps": -0.08,
+    "lateral_velocity_mps": 0.04
+  },
+  {
+    "radar_point_index": 67,
+    "x_m": 94.2,
+    "y_m": -27.1,
+    "distance_m": 98.02,
+    "relative_velocity_mps": -0.05,
+    "lateral_velocity_mps": 0.01
+  }
+]

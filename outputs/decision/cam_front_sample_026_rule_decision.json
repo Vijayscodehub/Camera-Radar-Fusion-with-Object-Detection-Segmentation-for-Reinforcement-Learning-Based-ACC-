@@ -1,0 +1,11 @@
+{
+  "sample_index": 26,
+  "recommended_action": "MAINTAIN",
+  "decision_reason": "Lead object is within 30 m.",
+  "lead_class": "truck",
+  "lead_distance_m": 24.07,
+  "lead_relative_speed_mps": 0.02,
+  "ttc_s": 1203.5,
+  "drivable_ahead": true,
+  "ego_speed_mps": 13.9
+}

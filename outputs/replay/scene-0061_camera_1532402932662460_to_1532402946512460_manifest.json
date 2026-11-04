@@ -1,0 +1,309 @@
+{
+  "scene_name": "scene-0061",
+  "selection_mode": "camera_timestamp_range",
+  "start_sample_index": 11,
+  "actual_frame_count": 27,
+  "frames": [
+    {
+      "frame_number": 0,
+      "sample_index": 11,
+      "sample_token": "c235638ed66145988d17f9d0601923f2",
+      "sample_timestamp_us": 1532402933146604,
+      "camera_filename": "samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402933112460.jpg",
+      "camera_timestamp_us": 1532402933112460,
+      "radar_filename": "samples/RADAR_FRONT/n015-2018-07-24-11-22-45+0800__RADAR_FRONT__1532402933171442.pcd",
+      "radar_timestamp_us": 1532402933171442,
+      "radar_camera_offset_ms": 58.982
+    },
+    {
+      "frame_number": 1,
+      "sample_index": 12,
+      "sample_token": "bc3c8a953f6b4dcdb77b521d89f3d9d5",
+      "sample_timestamp_us": 1532402933646462,
+      "camera_filename": "samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402933612460.jpg",
+      "camera_timestamp_us": 1532402933612460,
+      "radar_filename": "samples/RADAR_FRONT/n015-2018-07-24-11-22-45+0800__RADAR_FRONT__1532402933626683.pcd",
+      "radar_timestamp_us": 1532402933626683,
+      "radar_camera_offset_ms": 14.223
+    },
+    {
+      "frame_number": 2,
+      "sample_index": 13,
+      "sample_token": "1e3d79dae62742a0ad64c91679863358",
+      "sample_timestamp_us": 1532402934146351,
+      "camera_filename": "samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402934112460.jpg",
+      "camera_timestamp_us": 1532402934112460,
+      "radar_filename": "samples/RADAR_FRONT/n015-2018-07-24-11-22-45+0800__RADAR_FRONT__1532402934150966.pcd",
+      "radar_timestamp_us": 1532402934150966,
+      "radar_camera_offset_ms": 38.506
+    },
+    {
+      "frame_number": 3,
+      "sample_index": 14,
+      "sample_token": "2afb9d32310e4546a71cbe432911eca2",
+      "sample_timestamp_us": 1532402934696555,
+      "camera_filename": "samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402934662484.jpg",
+      "camera_timestamp_us": 1532402934662484,
+      "radar_filename": "samples/RADAR_FRONT/n015-2018-07-24-11-22-45+0800__RADAR_FRONT__1532402934681921.pcd",
+      "radar_timestamp_us": 1532402934681921,
+      "radar_camera_offset_ms": 19.437
+    },
+    {
+      "frame_number": 4,
+      "sample_index": 15,
+      "sample_token": "cd21dbfc3bd749c7b10a5c42562e0c42",
+      "sample_timestamp_us": 1532402935197541,
+      "camera_filename": "samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402935162463.jpg",
+      "camera_timestamp_us": 1532402935162463,
+      "radar_filename": "samples/RADAR_FRONT/n015-2018-07-24-11-22-45+0800__RADAR_FRONT__1532402935212100.pcd",
+      "radar_timestamp_us": 1532402935212100,
+      "radar_camera_offset_ms": 49.637
+    },
+    {
+      "frame_number": 5,
+      "sample_index": 16,
+      "sample_token": "88449a5cb1644a199c1c11f6ac034867",
+      "sample_timestamp_us": 1532402935697945,
+      "camera_filename": "samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402935662460.jpg",
+      "camera_timestamp_us": 1532402935662460,
+      "radar_filename": "samples/RADAR_FRONT/n015-2018-07-24-11-22-45+0800__RADAR_FRONT__1532402935662251.pcd",
+      "radar_timestamp_us": 1532402935662251,
+      "radar_camera_offset_ms": -0.209
+    },
+    {
+      "frame_number": 6,
+      "sample_index": 17,
+      "sample_token": "2ff86dc19c4644a1a88ce5ba848f56e5",
+      "sample_timestamp_us": 1532402936198962,
+      "camera_filename": "samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402936162460.jpg",
+      "camera_timestamp_us": 1532402936162460,
+      "radar_filename": "samples/RADAR_FRONT/n015-2018-07-24-11-22-45+0800__RADAR_FRONT__1532402936187420.pcd",
+      "radar_timestamp_us": 1532402936187420,
+      "radar_camera_offset_ms": 24.96
+    },
+    {
+      "frame_number": 7,
+      "sample_index": 18,
+      "sample_token": "bf2938e43c6f487497cda76b51bfc406",
+      "sample_timestamp_us": 1532402936699359,
+      "camera_filename": "samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402936662460.jpg",
+      "camera_timestamp_us": 1532402936662460,
+      "radar_filename": "samples/RADAR_FRONT/n015-2018-07-24-11-22-45+0800__RADAR_FRONT__1532402936722558.pcd",
+      "radar_timestamp_us": 1532402936722558,
+      "radar_camera_offset_ms": 60.098
+    },
+    {
+      "frame_number": 8,
+      "sample_index": 19,
+      "sample_token": "b26e791522294bec90f86fd72226e35c",
+      "sample_timestamp_us": 1532402937198682,
+      "camera_filename": "samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402937162460.jpg",
+      "camera_timestamp_us": 1532402937162460,
+      "radar_filename": "samples/RADAR_FRONT/n015-2018-07-24-11-22-45+0800__RADAR_FRONT__1532402937172732.pcd",
+      "radar_timestamp_us": 1532402937172732,
+      "radar_camera_offset_ms": 10.272
+    },
+    {
+      "frame_number": 9,
+      "sample_index": 20,
+      "sample_token": "c844bf5a9f2243ff8f4bf2c85fe218ff",
+      "sample_timestamp_us": 1532402937698000,
+      "camera_filename": "samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402937662460.jpg",
+      "camera_timestamp_us": 1532402937662460,
+      "radar_filename": "samples/RADAR_FRONT/n015-2018-07-24-11-22-45+0800__RADAR_FRONT__1532402937702954.pcd",
+      "radar_timestamp_us": 1532402937702954,
+      "radar_camera_offset_ms": 40.494
+    },
+    {
+      "frame_number": 10,
+      "sample_index": 21,
+      "sample_token": "fedfb3a6cb804635a0f47143f9ca8d6f",
+      "sample_timestamp_us": 1532402938197897,
+      "camera_filename": "samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402938162460.jpg",
+      "camera_timestamp_us": 1532402938162460,
+      "radar_filename": "samples/RADAR_FRONT/n015-2018-07-24-11-22-45+0800__RADAR_FRONT__1532402938232270.pcd",
+      "radar_timestamp_us": 1532402938232270,
+      "radar_camera_offset_ms": 69.81
+    },
+    {
+      "frame_number": 11,
+      "sample_index": 22,
+      "sample_token": "965f6af5a92449348409029a5f048a38",
+      "sample_timestamp_us": 1532402938647444,
+      "camera_filename": "samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402938612460.jpg",
+      "camera_timestamp_us": 1532402938612460,
+      "radar_filename": "samples/RADAR_FRONT/n015-2018-07-24-11-22-45+0800__RADAR_FRONT__1532402938613249.pcd",
+      "radar_timestamp_us": 1532402938613249,
+      "radar_camera_offset_ms": 0.789
+    },
+    {
+      "frame_number": 12,
+      "sample_index": 23,
+      "sample_token": "4711bcd34644420da8bc77163431888e",
+      "sample_timestamp_us": 1532402939147334,
+      "camera_filename": "samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402939112460.jpg",
+      "camera_timestamp_us": 1532402939112460,
+      "radar_filename": "samples/RADAR_FRONT/n015-2018-07-24-11-22-45+0800__RADAR_FRONT__1532402939143398.pcd",
+      "radar_timestamp_us": 1532402939143398,
+      "radar_camera_offset_ms": 30.938
+    },
+    {
+      "frame_number": 13,
+      "sample_index": 24,
+      "sample_token": "a34fabc7aa674713b71f98ec541eb2d4",
+      "sample_timestamp_us": 1532402939697511,
+      "camera_filename": "samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402939662460.jpg",
+      "camera_timestamp_us": 1532402939662460,
+      "radar_filename": "samples/RADAR_FRONT/n015-2018-07-24-11-22-45+0800__RADAR_FRONT__1532402939668568.pcd",
+      "radar_timestamp_us": 1532402939668568,
+      "radar_camera_offset_ms": 6.108
+    },
+    {
+      "frame_number": 14,
+      "sample_index": 25,
+      "sample_token": "c78067571d104caba7c568a847d56971",
+      "sample_timestamp_us": 1532402940197958,
+      "camera_filename": "samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402940162460.jpg",
+      "camera_timestamp_us": 1532402940162460,
+      "radar_filename": "samples/RADAR_FRONT/n015-2018-07-24-11-22-45+0800__RADAR_FRONT__1532402940198168.pcd",
+      "radar_timestamp_us": 1532402940198168,
+      "radar_camera_offset_ms": 35.708
+    },
+    {
+      "frame_number": 15,
+      "sample_index": 26,
+      "sample_token": "4246e57f018745c9b2bc68feb3d71b58",
+      "sample_timestamp_us": 1532402940797343,
+      "camera_filename": "samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402940762460.jpg",
+      "camera_timestamp_us": 1532402940762460,
+      "radar_filename": "samples/RADAR_FRONT/n015-2018-07-24-11-22-45+0800__RADAR_FRONT__1532402940803951.pcd",
+      "radar_timestamp_us": 1532402940803951,
+      "radar_camera_offset_ms": 41.491
+    },
+    {
+      "frame_number": 16,
+      "sample_index": 27,
+      "sample_token": "a7acb150914b40bdad9a2dc4e657cbf9",
+      "sample_timestamp_us": 1532402941297218,
+      "camera_filename": "samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402941262460.jpg",
+      "camera_timestamp_us": 1532402941262460,
+      "radar_filename": "samples/RADAR_FRONT/n015-2018-07-24-11-22-45+0800__RADAR_FRONT__1532402941329196.pcd",
+      "radar_timestamp_us": 1532402941329196,
+      "radar_camera_offset_ms": 66.736
+    },
+    {
+      "frame_number": 17,
+      "sample_index": 28,
+      "sample_token": "0cd661df01aa40c3bb3a773ba86f753a",
+      "sample_timestamp_us": 1532402941797653,
+      "camera_filename": "samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402941762460.jpg",
+      "camera_timestamp_us": 1532402941762460,
+      "radar_filename": "samples/RADAR_FRONT/n015-2018-07-24-11-22-45+0800__RADAR_FRONT__1532402941784290.pcd",
+      "radar_timestamp_us": 1532402941784290,
+      "radar_camera_offset_ms": 21.83
+    },
+    {
+      "frame_number": 18,
+      "sample_index": 29,
+      "sample_token": "378a3a3e9af346308ab9dff8ced46d9c",
+      "sample_timestamp_us": 1532402942197463,
+      "camera_filename": "samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402942162460.jpg",
+      "camera_timestamp_us": 1532402942162460,
+      "radar_filename": "samples/RADAR_FRONT/n015-2018-07-24-11-22-45+0800__RADAR_FRONT__1532402942234409.pcd",
+      "radar_timestamp_us": 1532402942234409,
+      "radar_camera_offset_ms": 71.949
+    },
+    {
+      "frame_number": 19,
+      "sample_index": 30,
+      "sample_token": "eef55c3b48f34d949959b45130ee293a",
+      "sample_timestamp_us": 1532402942697870,
+      "camera_filename": "samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402942662460.jpg",
+      "camera_timestamp_us": 1532402942662460,
+      "radar_filename": "samples/RADAR_FRONT/n015-2018-07-24-11-22-45+0800__RADAR_FRONT__1532402942689662.pcd",
+      "radar_timestamp_us": 1532402942689662,
+      "radar_camera_offset_ms": 27.202
+    },
+    {
+      "frame_number": 20,
+      "sample_index": 31,
+      "sample_token": "5fda58ee3ae44ab9b4bbac7a2de66c27",
+      "sample_timestamp_us": 1532402943197769,
+      "camera_filename": "samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402943162460.jpg",
+      "camera_timestamp_us": 1532402943162460,
+      "radar_filename": "samples/RADAR_FRONT/n015-2018-07-24-11-22-45+0800__RADAR_FRONT__1532402943214745.pcd",
+      "radar_timestamp_us": 1532402943214745,
+      "radar_camera_offset_ms": 52.285
+    },
+    {
+      "frame_number": 21,
+      "sample_index": 32,
+      "sample_token": "919e3c4cec934168a3152077a9adcbea",
+      "sample_timestamp_us": 1532402943697655,
+      "camera_filename": "samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402943662460.jpg",
+      "camera_timestamp_us": 1532402943662460,
+      "radar_filename": "samples/RADAR_FRONT/n015-2018-07-24-11-22-45+0800__RADAR_FRONT__1532402943669939.pcd",
+      "radar_timestamp_us": 1532402943669939,
+      "radar_camera_offset_ms": 7.479
+    },
+    {
+      "frame_number": 22,
+      "sample_index": 33,
+      "sample_token": "b73152cab88f49d9ba195da81fde1809",
+      "sample_timestamp_us": 1532402944198088,
+      "camera_filename": "samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402944162460.jpg",
+      "camera_timestamp_us": 1532402944162460,
+      "radar_filename": "samples/RADAR_FRONT/n015-2018-07-24-11-22-45+0800__RADAR_FRONT__1532402944199522.pcd",
+      "radar_timestamp_us": 1532402944199522,
+      "radar_camera_offset_ms": 37.062
+    },
+    {
+      "frame_number": 23,
+      "sample_index": 34,
+      "sample_token": "6aa6fa91e0d1492e812eb7e57c47df6e",
+      "sample_timestamp_us": 1532402944697931,
+      "camera_filename": "samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402944662460.jpg",
+      "camera_timestamp_us": 1532402944662460,
+      "radar_filename": "samples/RADAR_FRONT/n015-2018-07-24-11-22-45+0800__RADAR_FRONT__1532402944725265.pcd",
+      "radar_timestamp_us": 1532402944725265,
+      "radar_camera_offset_ms": 62.805
+    },
+    {
+      "frame_number": 24,
+      "sample_index": 35,
+      "sample_token": "aa581aac963a4fad848ac11fe66e8637",
+      "sample_timestamp_us": 1532402945197276,
+      "camera_filename": "samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402945162460.jpg",
+      "camera_timestamp_us": 1532402945162460,
+      "radar_filename": "samples/RADAR_FRONT/n015-2018-07-24-11-22-45+0800__RADAR_FRONT__1532402945180429.pcd",
+      "radar_timestamp_us": 1532402945180429,
+      "radar_camera_offset_ms": 17.969
+    },
+    {
+      "frame_number": 25,
+      "sample_index": 36,
+      "sample_token": "67e5f88901214f3aa03d68e028185e22",
+      "sample_timestamp_us": 1532402945697148,
+      "camera_filename": "samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402945662460.jpg",
+      "camera_timestamp_us": 1532402945662460,
+      "radar_filename": "samples/RADAR_FRONT/n015-2018-07-24-11-22-45+0800__RADAR_FRONT__1532402945710560.pcd",
+      "radar_timestamp_us": 1532402945710560,
+      "radar_camera_offset_ms": 48.1
+    },
+    {
+      "frame_number": 26,
+      "sample_index": 37,
+      "sample_token": "29e056fc277543c9bc42310b122c640e",
+      "sample_timestamp_us": 1532402946297085,
+      "camera_filename": "samples/CAM_FRONT/n015-2018-07-24-11-22-45+0800__CAM_FRONT__1532402946262460.jpg",
+      "camera_timestamp_us": 1532402946262460,
+      "radar_filename": "samples/RADAR_FRONT/n015-2018-07-24-11-22-45+0800__RADAR_FRONT__1532402946309929.pcd",
+      "radar_timestamp_us": 1532402946309929,
+      "radar_camera_offset_ms": 47.469
+    }
+  ],
+  "camera_timestamp_range_us": [
+    1532402932662460,
+    1532402946512460
+  ]
+}

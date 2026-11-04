@@ -1,0 +1,102 @@
+[
+  {
+    "class": "car",
+    "bbox": [
+      1,
+      506,
+      452,
+      721
+    ],
+    "confidence": 0.93
+  },
+  {
+    "class": "car",
+    "bbox": [
+      868,
+      467,
+      994,
+      574
+    ],
+    "confidence": 0.843
+  },
+  {
+    "class": "car",
+    "bbox": [
+      1021,
+      470,
+      1098,
+      531
+    ],
+    "confidence": 0.7706
+  },
+  {
+    "class": "car",
+    "bbox": [
+      1349,
+      456,
+      1405,
+      500
+    ],
+    "confidence": 0.6112
+  },
+  {
+    "class": "car",
+    "bbox": [
+      751,
+      471,
+      795,
+      499
+    ],
+    "confidence": 0.5687
+  },
+  {
+    "class": "car",
+    "bbox": [
+      367,
+      490,
+      464,
+      572
+    ],
+    "confidence": 0.4507
+  },
+  {
+    "class": "car",
+    "bbox": [
+      699,
+      472,
+      737,
+      512
+    ],
+    "confidence": 0.447
+  },
+  {
+    "class": "car",
+    "bbox": [
+      1506,
+      440,
+      1600,
+      546
+    ],
+    "confidence": 0.4109
+  },
+  {
+    "class": "car",
+    "bbox": [
+      1293,
+      451,
+      1405,
+      501
+    ],
+    "confidence": 0.3703
+  },
+  {
+    "class": "car",
+    "bbox": [
+      1404,
+      455,
+      1473,
+      489
+    ],
+    "confidence": 0.3651
+  }
+]
