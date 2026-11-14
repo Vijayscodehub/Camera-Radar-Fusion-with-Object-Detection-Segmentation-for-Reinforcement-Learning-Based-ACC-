@@ -10,7 +10,7 @@ DATASET_VERSION = "v1.0-mini"
 
 
 def main() -> None:
-    dataset_root = DATA_ROOT.resolve()
+    dataset_root = DATA_ROOT.resolve() #turns a short, relative address like "the folder next door" into the full address
     nusc = NuScenes(version=DATASET_VERSION, dataroot=str(dataset_root), verbose=False)
     sample = nusc.sample[0]
 
@@ -18,8 +18,9 @@ def main() -> None:
     radar_data = nusc.get("sample_data", sample["data"]["RADAR_FRONT"])
     camera_path = dataset_root / camera_data["filename"]
     radar_path = dataset_root / radar_data["filename"]
-    image = cv2.imread(str(camera_path))
+    image = cv2.imread(str(camera_path)) #imread means "image read"
     radar_points = RadarPointCloud.from_file(str(radar_path))
+    #The camera and radar sit in different spots, so we need this to line up what they see.
     camera_calibration = nusc.get(
         "calibrated_sensor", camera_data["calibrated_sensor_token"]
     )

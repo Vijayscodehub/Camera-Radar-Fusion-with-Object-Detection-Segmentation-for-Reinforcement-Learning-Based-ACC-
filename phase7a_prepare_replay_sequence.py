@@ -62,7 +62,7 @@ def timestamp_range_samples(
     scene_tokens = {sample["scene_token"] for sample in samples}
     if len(scene_tokens) != 1:
         raise ValueError("Timestamp range must contain keyframes from exactly one scene.")
-    for previous_sample, current_sample in zip(samples, samples[1:]):
+    for previous_sample, current_sample in zip(samples, samples[1:]): #pairs up neighbours
         if previous_sample["next"] != current_sample["token"]:
             raise ValueError("Selected keyframes are not consecutive within their scene.")
     return samples
@@ -181,4 +181,4 @@ if __name__ == "__main__":
         arguments.frame_count,
         arguments.start_camera_timestamp,
         arguments.end_camera_timestamp,
-    )
+    ) #Create a continuous camera-radar replay manifest from a nuScenes scene.

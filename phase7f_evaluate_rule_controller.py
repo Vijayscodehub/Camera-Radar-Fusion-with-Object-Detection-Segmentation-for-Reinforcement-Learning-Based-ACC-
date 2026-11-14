@@ -187,4 +187,4 @@ if __name__ == "__main__":
     selected_scenarios = (
         list(SCENARIOS) if arguments.scenario == "all" else [arguments.scenario]
     )
-    main(selected_scenarios, arguments.max_steps)
+    main(selected_scenarios, arguments.max_steps) #It runs the rule-based ACC controller in one or more scenarios, saves a CSV of the results, and saves a plot of distance, speed, and reward with colored dots for brake, maintain, or accelerate. instead of agent we have a rule based controller and after train we do the same evaluation as in phase7g_train_ppo.py

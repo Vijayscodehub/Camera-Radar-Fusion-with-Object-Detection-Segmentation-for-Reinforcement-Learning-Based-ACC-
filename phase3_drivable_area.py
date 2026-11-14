@@ -10,7 +10,7 @@ from PIL import Image
 DATA_ROOT = Path("data/nuscenes_dataset/v1.0-mini")
 DATASET_VERSION = "v1.0-mini"
 SAMPLE_INDEX = 95
-ROAD_CLASS_ID = 0
+ROAD_CLASS_ID = 0 #means "road" (0).
 OVERLAY_ALPHA = 0.45
 DRIVABLE_COLOR = np.array([0, 255, 0], dtype=np.uint8)
 
@@ -48,7 +48,7 @@ def main(sample_index: int) -> None:
             "The segmentation mask and camera image have different dimensions."
         )
 
-    drivable_mask = class_mask == ROAD_CLASS_ID
+    drivable_mask = class_mask == ROAD_CLASS_ID #Asks every pixel, "Are you 0 (road)?"
     binary_mask = np.where(drivable_mask, 255, 0).astype(np.uint8)
     overlay = original_image.copy()
     overlay[drivable_mask] = (
@@ -93,6 +93,6 @@ if __name__ == "__main__":
         type=int,
         default=SAMPLE_INDEX,
         help=f"nuScenes sample index to process (default: {SAMPLE_INDEX}).",
-    )
+    ) #Open a photo → open the SegFormer class-ID mask → ask every pixel, "Are you 0 (road)?" → color the road pixels green → save a binary mask and an overlay
     arguments = parser.parse_args()
     main(arguments.sample_index)

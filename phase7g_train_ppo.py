@@ -47,7 +47,7 @@ def make_training_environment(max_steps: int) -> AdaptiveCruiseControlEnv:
     return AdaptiveCruiseControlEnv(
         max_steps=max_steps,
         randomize_lead_presence=True,
-        randomize_lead_acceleration=True,
+        randomize_lead_acceleration=True, #Random practice teaches it to handle any situation, not just the two fixed scenarios we evaluate later.
     )
 
 
@@ -59,16 +59,16 @@ def train_model(
 ) -> PPO:
     vector_environment = make_vec_env(
         lambda: make_training_environment(max_steps),
-        n_envs=number_of_environments,
+        n_envs=number_of_environments, #copies of the game that all run together, so the robot learns faster.
         seed=seed,
     )
     model = PPO(
-        "MlpPolicy",
+        "MlpPolicy", #the brain is a small neural network (multi-layer perceptron) that takes the 5 numbers from the environment and outputs one of 3 actions.
         vector_environment,
         learning_rate=3e-4,
         n_steps=512,
         batch_size=64,
-        gamma=0.99,
+        gamma=0.99, #how much it cares about the future. Near 1 means long-term thinking, not just right now
         seed=seed,
         device="cpu",
         verbose=1,
@@ -87,7 +87,7 @@ def evaluate_model(
     collision = False
 
     for step_number in range(max_steps):
-        action, _ = model.predict(observation, deterministic=True)
+        action, _ = model.predict(observation, deterministic=True) #means it always picks its best guess, not a random choice. This is what we want for evaluation, but during training it sometimes picks a random action to explore.
         action_value = int(action)
         observation, reward, terminated, truncated, info = environment.step(action_value)
         rows.append(

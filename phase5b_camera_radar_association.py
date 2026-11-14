@@ -25,10 +25,10 @@ def main(sample_index: int) -> None:
     fusion_directory = Path("outputs/fusion").resolve()
     fusion_directory.mkdir(parents=True, exist_ok=True)
 
-    detections_path = detections_directory / f"cam_front_sample_{sample_index:03d}_yolo11n.json"
+    detections_path = detections_directory / f"cam_front_sample_{sample_index:03d}_yolo11n.json" #detections from Phase 1
     projected_targets_path = (
         fusion_directory / f"cam_front_sample_{sample_index:03d}_projected_radar_targets.json"
-    )
+    ) #projected radar targets from Phase 5a
     for required_path, description in [
         (detections_path, "YOLO detections"),
         (projected_targets_path, "projected radar targets"),
@@ -58,7 +58,7 @@ def main(sample_index: int) -> None:
             target
             for target in projected_targets
             if point_is_inside_box(target, detection["bbox"])
-        ]
+        ] #Make a list of every radar dot where the dot-in-box check says True
         fused_obstacle = detection.copy()
         fused_obstacle["radar_matched"] = bool(matched_targets)
         fused_obstacle["radar_point_count"] = len(matched_targets)
@@ -66,7 +66,7 @@ def main(sample_index: int) -> None:
         if matched_targets:
             fused_obstacle["distance_m"] = round(
                 float(np.median([target["distance_m"] for target in matched_targets])), 2
-            )
+            ) #Calculate the median distance of the matched radar targets
             fused_obstacle["relative_speed_mps"] = round(
                 float(
                     np.median(
@@ -85,9 +85,9 @@ def main(sample_index: int) -> None:
 
         fused_obstacles.append(fused_obstacle)
 
-        x1, y1, x2, y2 = detection["bbox"]
+        x1, y1, x2, y2 = detection["bbox"] 
         cv2.rectangle(image, (x1, y1), (x2, y2), BOX_COLOR, 2)
-        if matched_targets:
+        if matched_targets: #eg car 23.4m -1.2m/s
             label = (
                 f"{detection['class']} {fused_obstacle['distance_m']:.1f}m "
                 f"{fused_obstacle['relative_speed_mps']:.1f}m/s"
@@ -99,7 +99,7 @@ def main(sample_index: int) -> None:
                     6,
                     MATCHED_POINT_COLOR,
                     -1,
-                )
+                ) 
         else:
             label = f"{detection['class']} no radar match"
 
@@ -121,7 +121,7 @@ def main(sample_index: int) -> None:
     if not cv2.imwrite(str(overlay_path), image):
         raise OSError(f"Could not save fusion overlay: {overlay_path}")
 
-    matched_count = sum(obstacle["radar_matched"] for obstacle in fused_obstacles)
+    matched_count = sum(obstacle["radar_matched"] for obstacle in fused_obstacles) #Count how many of the fused obstacles have radar matches
     print(f"Sample index: {sample_index}")
     print(f"YOLO detections: {len(detections)}")
     print(f"Radar-matched detections: {matched_count}")
@@ -138,6 +138,6 @@ if __name__ == "__main__":
         type=int,
         default=SAMPLE_INDEX,
         help=f"nuScenes sample index to process (default: {SAMPLE_INDEX}).",
-    )
+    )#Open a camera image → load the YOLO detections → load the projected radar targets → check which radar targets are inside which YOLO boxes → save a JSON file of the fused obstacles → save a picture of the fused obstacles with matched radar dots drawn on top
     arguments = parser.parse_args()
     main(arguments.sample_index)

@@ -19,14 +19,18 @@ def main() -> None:
     output_path.parent.mkdir(parents=True, exist_ok=True)
 
     nusc = NuScenes(version=DATASET_VERSION, dataroot=str(dataset_root), verbose=False)
-    sample = nusc.sample[0]
+    sample = nusc.sample[0] #[0] means the first sample in the dataset.
     camera_token = sample["data"]["CAM_FRONT"]
     radar_token = sample["data"]["RADAR_FRONT"]
 
     image_points, point_ranges_m, image = nusc.explorer.map_pointcloud_to_image(
         radar_token,
         camera_token,
-    )
+    )  #Move the dots from the radar's view to the car's view.
+        #Move them to the world map at the radar's time.
+        #Move them back to the car's view at the camera's time.
+        #Move them to the camera's view.
+        #Use the lens numbers (the intrinsic matrix) to turn them into pixels.
 
     figure, axis = plt.subplots(figsize=(16, 9))
     axis.imshow(image)

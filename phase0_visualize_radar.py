@@ -25,9 +25,9 @@ def main() -> None:
     radar_path = dataset_root / radar_data["filename"]
     radar = RadarPointCloud.from_file(str(radar_path))
 
-    forward_position_m = radar.points[0]
-    left_position_m = radar.points[1]
-    compensated_forward_velocity_mps = radar.points[8]
+    forward_position_m = radar.points[0] #row 0 is how far forward each dot is
+    left_position_m = radar.points[1] #row 1 is how far left each dot is
+    compensated_forward_velocity_mps = radar.points[8] #row 8 is the compensated forward velocity
 
     figure, axis = plt.subplots(figsize=(10, 7))
     points = axis.scatter(
@@ -39,7 +39,8 @@ def main() -> None:
         edgecolors="black",
         linewidths=0.4,
     )
-    axis.scatter(0, 0, c="black", marker="^", s=120, label="Ego vehicle")
+    axis.scatter(0, 0, c="black", marker="^", s=120, label="Ego vehicle") #Puts one black triangle at the middle (0, 0) to stand for our car
+    #horizontal and a vertical gray line through zero,
     axis.axhline(0, color="gray", linewidth=0.8)
     axis.axvline(0, color="gray", linewidth=0.8)
     axis.set_title("RADAR_FRONT Returns")
@@ -57,4 +58,4 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()
+    main() #Make sure the output folder exists → open the dataset → take the first snapshot → load its front radar dots → pull out forward position, left position, and speed → plot them as colored dots on a top-down map with the car at the middle → save as a PNG → print the location and dot count

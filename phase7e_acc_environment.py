@@ -1,8 +1,8 @@
-from typing import Any
+from typing import Any #any kind of value
 
 import gymnasium as gym
 import numpy as np
-from gymnasium import spaces
+from gymnasium import spaces #describes what moves and measurements are allowed
 
 
 BRAKE = 0
@@ -24,14 +24,14 @@ NEUTRAL_FOLLOWING_SAMPLE_12 = {
     "ego_speed_mps": 13.9,
     "lead_speed_mps": 13.9,
     "lead_acceleration_mps2": 0.0,
-}
+} #relaxed, same speed
 CLOSE_FOLLOWING_SAMPLE_14 = {
     "scenario_name": "sample_014_close_following",
     "initial_gap_m": 12.18,
     "ego_speed_mps": 13.9,
     "lead_speed_mps": 10.62,
     "lead_acceleration_mps2": 0.0,
-}
+} #dangerous, we're faster and close
 
 
 class AdaptiveCruiseControlEnv(gym.Env):
@@ -41,6 +41,7 @@ class AdaptiveCruiseControlEnv(gym.Env):
         self,
         time_step_s: float = 0.2,
         max_steps: int = 150,
+        #two switches for randomness: sometimes there's no lead car, and sometimes the lead car speeds up or slows down
         randomize_lead_presence: bool = False,
         randomize_lead_acceleration: bool = False,
     ) -> None:
@@ -72,9 +73,9 @@ class AdaptiveCruiseControlEnv(gym.Env):
             [
                 float(self.lead_present),
                 self.gap_m,
-                closing_speed_mps,
+                closing_speed_mps, #Closing speed = our speed − lead speed
                 self.ego_speed_mps,
-                1.0,
+                1.0, #bias
             ],
             dtype=np.float32,
         )
@@ -84,7 +85,7 @@ class AdaptiveCruiseControlEnv(gym.Env):
             self.ego_speed_mps - self.lead_speed_mps if self.lead_present else 0.0
         )
         ttc_s = self.gap_m / closing_speed_mps if closing_speed_mps > 0.05 else None
-        desired_gap_m = max(8.0, 1.5 * self.ego_speed_mps)
+        desired_gap_m = max(8.0, 1.5 * self.ego_speed_mps) #but never less than 8 m
         return {
             "scenario_name": self.scenario_name,
             "gap_m": round(self.gap_m, 3),

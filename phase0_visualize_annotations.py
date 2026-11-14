@@ -23,7 +23,7 @@ def main() -> None:
 
     nusc.render_sample_data(
         camera_token,
-        with_anns=True,
+        with_anns=True, #also draw the annotations" (the labeled boxes).
         out_path=str(output_path),
     )
 
@@ -31,4 +31,4 @@ def main() -> None:
 
 
 if __name__ == "__main__":
-    main()
+    main() #Make sure the output folder exists → open the dataset → take the first snapshot → find its front-camera reading → ask nuScenes to draw that photo with the labeled boxes → save it as a PNG → print where it was saved.

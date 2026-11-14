@@ -34,19 +34,21 @@ def main(sample_index: int) -> None:
     sample = nusc.sample[sample_index]
     radar_data = nusc.get("sample_data", sample["data"]["RADAR_FRONT"])
     radar_path = dataset_root / radar_data["filename"]
-    radar = RadarPointCloud.from_file(str(radar_path))
+    radar = RadarPointCloud.from_file(str(radar_path)) #Open the radar file and load the dots into radar
 
-    x_m = radar.points[0]
-    y_m = radar.points[1]
-    vx_comp_mps = radar.points[8]
-    vy_comp_mps = radar.points[9]
+    x_m = radar.points[0] #row 0 is how far forward each dot is, in metres.
+    y_m = radar.points[1] #row 1 is how far left each dot is  in metres.
+    
+    #negative number is a thing coming toward us, and a positive number is a thing moving away.
+    vx_comp_mps = radar.points[8] #dot's speed along the line of sight, in metres per second, after correcting for the car's own movement (vx_comp)
+    vy_comp_mps = radar.points[9] #dot's speed perpendicular to the line of sight, in metres per second, after correcting for the car's own movement (vy_comp)
     invalid_state = radar.points[INVALID_STATE_ROW]
     distance_m = np.hypot(x_m, y_m)
 
     valid_targets = (
-        (x_m > 0)
-        & (distance_m >= MIN_DISTANCE_M)
-        & (distance_m <= MAX_DISTANCE_M)
+        (x_m > 0) #only forward targets, not behind the car
+        & (distance_m >= MIN_DISTANCE_M) #close noisy removed
+        & (distance_m <= MAX_DISTANCE_M) #far noisy removed
         & (invalid_state == 0)
     )
     target_indices = np.flatnonzero(valid_targets)
@@ -108,6 +110,6 @@ if __name__ == "__main__":
         type=int,
         default=SAMPLE_INDEX,
         help=f"nuScenes sample index to process (default: {SAMPLE_INDEX}).",
-    )
+    ) #Open a radar file → filter the dots → save a JSON file of the targets → save a top-down picture of the targets
     arguments = parser.parse_args()
     main(arguments.sample_index)

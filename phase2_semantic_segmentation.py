@@ -1,5 +1,6 @@
 import argparse
 from pathlib import Path
+from tkinter.filedialog import Open
 
 import cv2
 import numpy as np
@@ -12,8 +13,8 @@ from transformers import AutoImageProcessor, SegformerForSemanticSegmentation
 DATA_ROOT = Path("data/nuscenes_dataset/v1.0-mini")
 DATASET_VERSION = "v1.0-mini"
 MODEL_DIRECTORY = Path("models/segformer-b0-cityscapes")
-SAMPLE_INDEX = 95
-OVERLAY_ALPHA = 0.45
+SAMPLE_INDEX = 95 # Index of the image to process
+OVERLAY_ALPHA = 0.45  # how strong the colors are on top of the photo (45% color, 55% photo)
 
 CITYSCAPES_COLORS = np.array(
     [
@@ -28,7 +29,7 @@ CITYSCAPES_COLORS = np.array(
         [107, 142, 35],
         [152, 251, 152],
         [70, 130, 180],
-        [220, 20, 60],
+        [220, 20, 60], #person
         [255, 0, 0],
         [0, 0, 142],
         [0, 0, 70],
@@ -56,7 +57,7 @@ def main(sample_index: int) -> None:
     sample = nusc.sample[sample_index]
     camera_data = nusc.get("sample_data", sample["data"]["CAM_FRONT"])
     image_path = dataset_root / camera_data["filename"]
-    image = Image.open(image_path).convert("RGB")
+    image = Image.open(image_path).convert("RGB") #only rgb images supported 
 
     required_model_files = [
         model_directory / "config.json",
@@ -70,15 +71,15 @@ def main(sample_index: int) -> None:
             f"Missing model files in {model_directory}: {missing_files}."
         )
 
-    processor = AutoImageProcessor.from_pretrained(model_directory, local_files_only=True)
+    processor = AutoImageProcessor.from_pretrained(model_directory, local_files_only=True) #photo preparer
     model = SegformerForSemanticSegmentation.from_pretrained(
         model_directory,
         local_files_only=True,
     ).to("cpu")
     model.eval()
 
-    inputs = processor(images=image, return_tensors="pt")
-    with torch.inference_mode():
+    inputs = processor(images=image, return_tensors="pt") # prepares the photo and packs it into a tensor (a PyTorch number grid).
+    with torch.inference_mode(): #we're only guessing, not learning,"
         model_outputs = model(**inputs)
 
     class_mask = processor.post_process_semantic_segmentation(
@@ -86,7 +87,7 @@ def main(sample_index: int) -> None:
         target_sizes=[(image.height, image.width)],
     )[0].numpy().astype(np.uint8)
     colored_mask = CITYSCAPES_COLORS[class_mask]
-    original_image = np.array(image)
+    original_image = np.array(image) #turns the photo into a number grid.
     overlay = cv2.addWeighted(original_image, 1 - OVERLAY_ALPHA, colored_mask, OVERLAY_ALPHA, 0)
 
     output_stem = f"cam_front_sample_{sample_index:03d}_segformer_b0"
@@ -94,9 +95,10 @@ def main(sample_index: int) -> None:
     colored_mask_path = output_directory / f"{output_stem}_colored.png"
     overlay_path = output_directory / f"{output_stem}_overlay.png"
 
+    ##turns the photo into a number grid.
     Image.fromarray(class_mask).save(class_mask_path)
     Image.fromarray(colored_mask).save(colored_mask_path)
-    Image.fromarray(overlay).save(overlay_path)
+    Image.fromarray(overlay).save(overlay_path) 
 
     print(f"Input image: {camera_data['filename']}")
     print(f"Sample index: {sample_index}")
@@ -116,6 +118,6 @@ if __name__ == "__main__":
         type=int,
         default=SAMPLE_INDEX,
         help=f"nuScenes sample index to process (default: {SAMPLE_INDEX}).",
-    )
+    ) #Open a photo → prepare it → ask segformer what each pixel is → color the answers → save three pictures
     arguments = parser.parse_args()
     main(arguments.sample_index)

@@ -76,7 +76,7 @@ def main(sample_index: int) -> None:
             cv2.LINE_AA,
         )
 
-    output_image_path.write_bytes(cv2.imencode(".png", image)[1].tobytes())
+    output_image_path.write_bytes(cv2.imencode(".png", image)[1].tobytes())#turns the drawn image into PNG file data, and write_bytes saves it.
     output_json_path.write_text(json.dumps(detections, indent=2) + "\n")
 
     print(f"Input image: {camera_data['filename']}")

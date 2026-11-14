@@ -122,4 +122,4 @@ if __name__ == "__main__":
         help="Path to a replay manifest created by phase7a_prepare_replay_sequence.py.",
     )
     arguments = parser.parse_args()
-    main(arguments.manifest_path)
+    main(arguments.manifest_path) #It picks the closest radar-confirmed vehicle in the first frame, then in each later frame finds the vehicle whose box overlaps most with last frame's lead, and it calls it "lost" if the overlap is under 10%.

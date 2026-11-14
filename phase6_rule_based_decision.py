@@ -158,6 +158,8 @@ if __name__ == "__main__":
         type=int,
         default=SAMPLE_INDEX,
         help=f"nuScenes sample index to process (default: {SAMPLE_INDEX}).",
-    )
+    ) #Open the scene state JSON → open the drivable area binary mask → apply the rule-based decision logic → save a decision JSON and an overlay image showing the recommended action
     arguments = parser.parse_args()
     main(arguments.sample_index)
+    
+    #distance_m is hypo of the x and y coordinates of the radar point. because we want actual sideways dists to the target. and also we use the median of the points in the bb for the lead vehicle

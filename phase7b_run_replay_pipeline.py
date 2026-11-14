@@ -163,4 +163,4 @@ if __name__ == "__main__":
         help="Summarize existing Phase 1-6 outputs without rerunning them.",
     )
     arguments = parser.parse_args()
-    main(arguments.manifest_path, arguments.max_frames, arguments.skip_pipeline)
+    main(arguments.manifest_path, arguments.max_frames, arguments.skip_pipeline) #Phase 7a makes the list of frames, and Phase 7b runs the whole camera-radar brain (phases 1 to 6) on every frame, then collects what the car decided into one table

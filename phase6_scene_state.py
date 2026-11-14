@@ -8,27 +8,29 @@ import numpy as np
 
 SAMPLE_INDEX = 95
 VEHICLE_CLASSES = {"car", "truck", "bus"}
-EGO_SPEED_MPS = 13.9
-FOOTPOINT_WIDTH_FRACTION = 0.30
-FOOTPOINT_HEIGHT_PIXELS = 12
-MIN_FOOTPOINT_DRIVABLE_FRACTION = 0.20
-LOOKAHEAD_X_MIN_FRACTION = 0.40
-LOOKAHEAD_X_MAX_FRACTION = 0.60
-LOOKAHEAD_Y_MIN_FRACTION = 0.55
-LOOKAHEAD_Y_MAX_FRACTION = 0.90
-MIN_LOOKAHEAD_DRIVABLE_FRACTION = 0.05
+EGO_SPEED_MPS = 13.9 #  nuScenes dataset car 50 km/h - 13.9 m/s.
+##Uses the detected car's bounding box to check if the bottom of the car is on the road, and if there is road ahead of the car.
+FOOTPOINT_WIDTH_FRACTION = 0.30 # 30% of the width of the bounding box at the bottom of car where the car touches the road
+FOOTPOINT_HEIGHT_PIXELS = 12 #strip 12 pixels tall in that 30% region
 
+##Looks at the road ahead of our car, Uses a fixed region of the camera image not the bounding box of the detected car.
+MIN_FOOTPOINT_DRIVABLE_FRACTION = 0.20 #20% of that strip must be road
+LOOKAHEAD_X_MIN_FRACTION = 0.40 #horizontal area we want to look at middle part of the picture (40% till 60%)
+LOOKAHEAD_X_MAX_FRACTION = 0.60
+LOOKAHEAD_Y_MIN_FRACTION = 0.55 #lower part of the picture (55% till 90% down)
+LOOKAHEAD_Y_MAX_FRACTION = 0.90
+MIN_LOOKAHEAD_DRIVABLE_FRACTION = 0.05 # 5% of the above fraction area must be road
 
 def footpoint_drivable_fraction(
     drivable_mask: np.ndarray, bounding_box: list[int]
 ) -> float:
     image_height, image_width = drivable_mask.shape
     x1, y1, x2, y2 = bounding_box
-    box_width = max(x2 - x1, 1)
+    box_width = max(x2 - x1, 1) #sanity check
     half_footpoint_width = max(
         round(box_width * FOOTPOINT_WIDTH_FRACTION / 2), 1
     )
-    center_x = round((x1 + x2) / 2)
+    center_x = round((x1 + x2) / 2) #centre of the detected car
 
     footpoint_x1 = max(center_x - half_footpoint_width, 0)
     footpoint_x2 = min(center_x + half_footpoint_width + 1, image_width)
@@ -36,11 +38,11 @@ def footpoint_drivable_fraction(
     footpoint_y2 = min(y2 + 1, image_height)
     footpoint_region = drivable_mask[
         footpoint_y1:footpoint_y2, footpoint_x1:footpoint_x2
-    ]
+    ] #array slicing  #From the road image, give me only the pixels inside this small rectangles
 
     if footpoint_region.size == 0:
         return 0.0
-    return float(np.count_nonzero(footpoint_region) / footpoint_region.size)
+    return float(np.count_nonzero(footpoint_region) / footpoint_region.size) # % of the pixels in that small rectangle that are road
 
 
 def drivable_ahead_fraction(drivable_mask: np.ndarray) -> float:
@@ -96,7 +98,7 @@ def main(sample_index: int) -> None:
         candidate["footpoint_drivable_fraction"] = round(overlap_fraction, 3)
         candidates.append(candidate)
 
-    lead_object = min(candidates, key=lambda candidate: candidate["distance_m"], default=None)
+    lead_object = min(candidates, key=lambda candidate: candidate["distance_m"], default=None) # Select the closest vehicle candidate
     lookahead_fraction = drivable_ahead_fraction(drivable_mask)
     scene_state = {
         "sample_index": sample_index,
@@ -145,6 +147,7 @@ if __name__ == "__main__":
         type=int,
         default=SAMPLE_INDEX,
         help=f"nuScenes sample index to process (default: {SAMPLE_INDEX}).",
-    )
+    ) ##Open the fused obstacles JSON → open the drivable area binary mask → check which of the fused obstacles are on the road (at least 20% road under the vehicle's feet) → check if there is road ahead of our car (min percent of road - 5%) → save a scene state JSON file
+
     arguments = parser.parse_args()
     main(arguments.sample_index)

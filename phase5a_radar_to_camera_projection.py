@@ -7,7 +7,7 @@ import numpy as np
 from nuscenes.nuscenes import NuScenes
 from nuscenes.utils.data_classes import RadarPointCloud
 from nuscenes.utils.geometry_utils import view_points
-from pyquaternion import Quaternion
+from pyquaternion import Quaternion #store a rotation
 
 
 DATA_ROOT = Path("data/nuscenes_dataset/v1.0-mini")
@@ -15,13 +15,13 @@ DATASET_VERSION = "v1.0-mini"
 SAMPLE_INDEX = 95
 POINT_COLOR = (0, 255, 255)
 
-
+#This converts from "sensor's view" back to "a car's view.
 def transform_points(points: np.ndarray, rotation: list[float], translation: list[float]) -> np.ndarray:
-    rotation_matrix = Quaternion(rotation).rotation_matrix
+    rotation_matrix = Quaternion(rotation).rotation_matrix #rotation into a 3×3 number grid (matrix).
     translation_vector = np.array(translation).reshape(3, 1)
     return rotation_matrix @ points + translation_vector
 
-
+#This converts from "car's view" back to "a sensor's view.
 def inverse_transform_points(
     points: np.ndarray,
     rotation: list[float],
@@ -66,7 +66,7 @@ def main(sample_index: int) -> None:
 
     radar_calibration = nusc.get(
         "calibrated_sensor", radar_data["calibrated_sensor_token"]
-    )
+    ) # where a sensor is bolted onto the car, and how it's tilted
     radar_pose = nusc.get("ego_pose", radar_data["ego_pose_token"])
     camera_pose = nusc.get("ego_pose", camera_data["ego_pose_token"])
     camera_calibration = nusc.get(
@@ -75,35 +75,37 @@ def main(sample_index: int) -> None:
 
     points = transform_points(
         points, radar_calibration["rotation"], radar_calibration["translation"]
-    )
-    points = transform_points(points, radar_pose["rotation"], radar_pose["translation"])
+    ) #Radar → Car 
+    points = transform_points(points, radar_pose["rotation"], radar_pose["translation"]) # Car → World
     points = inverse_transform_points(
         points, camera_pose["rotation"], camera_pose["translation"]
-    )
+    ) #World → Car at the time of the camera photo
     points = inverse_transform_points(
         points,
         camera_calibration["rotation"],
         camera_calibration["translation"],
-    )
-
+    ) #Car → Camera
+    
+    #Now the dots are in the camera's own 3D view: x = right, y = down, z = forward.
     image_points = view_points(
         points,
         np.array(camera_calibration["camera_intrinsic"]),
-        normalize=True,
-    )
+        normalize=True, #divides by depth, so far things look smaller and closer to center, just like real perspective
+    ) #squash 3D into flat picture positions
     image_height, image_width = image.shape[:2]
     points_in_front = points[2] > 0
     points_inside_image = (
-        (image_points[0] >= 0)
-        & (image_points[0] < image_width)
-        & (image_points[1] >= 0)
-        & (image_points[1] < image_height)
+        (image_points[0] >= 0) #Pixel is not left of image
+        & (image_points[0] < image_width) #Pixel is not right of image
+        & (image_points[1] >= 0) #Pixel is not above image
+        & (image_points[1] < image_height) #Pixel is not below image
     )
     keep_projected_points = points_in_front & points_inside_image
 
     projected_targets = []
-    for local_index in np.flatnonzero(keep_projected_points):
+    for local_index in np.flatnonzero(keep_projected_points): #gives the positions of the kept dots.
         target = targets[local_index].copy()
+        #Round the pixel position to a whole number (you can't have half a pixel).
         pixel_x = round(float(image_points[0, local_index]))
         pixel_y = round(float(image_points[1, local_index]))
         target["pixel_x"] = pixel_x
@@ -135,6 +137,6 @@ if __name__ == "__main__":
         type=int,
         default=SAMPLE_INDEX,
         help=f"nuScenes sample index to process (default: {SAMPLE_INDEX}).",
-    )
+    ) #Open a radar file → filter the dots → project the kept dots onto the matching camera photo → save a JSON file of the projected targets → save a picture of the projected targets
     arguments = parser.parse_args()
     main(arguments.sample_index)

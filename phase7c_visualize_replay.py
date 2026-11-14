@@ -89,4 +89,4 @@ if __name__ == "__main__":
         help="Path to a replay results CSV created by phase7b_run_replay_pipeline.py.",
     )
     arguments = parser.parse_args()
-    main(arguments.results_path)
+    main(arguments.results_path) #It reads the results table, draws 3 graphs (distance, speed, time-to-collision) with colored dots for brake, maintain, or accelerate, and saves them as one PNG image.
